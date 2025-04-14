@@ -1,0 +1,13 @@
+.branding {
+    background-image: url('../../assets/background/group.png');
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 26rem;
+}
+
+.background {
+    background-image: url('../../assets/background/ellipse.png');
+    background-size: cover;
+    background-position: center;
+}
