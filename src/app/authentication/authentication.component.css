@@ -1,9 +1,10 @@
 .branding {
     background-image: url('../../assets/background/group.png');
-    background-size: 50rem;
+    background-size: 48rem;
     background-repeat: no-repeat;
     background-position: center;
     height: 26rem;
+    
 }
 
 .background {
