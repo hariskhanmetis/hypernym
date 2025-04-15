@@ -7,6 +7,8 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './verify-email/verify-email.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     AuthenticationComponent,
     LoginComponent,
     RegisterComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    VerifyEmailComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
