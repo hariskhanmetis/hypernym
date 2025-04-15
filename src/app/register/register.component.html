@@ -1,1 +1,117 @@
-<p>register works!</p>
+<div class="flex flex-col justify-center items-center w-full h-screen mt-20 p-3 gap-6">
+    <div class="flex flex-col justify-center items-center">
+        <h2 class="font-bold text-xl">Welcome to IoTility</h2>
+        <p class="text-xs">Streamline and automate your operations with IoTility.</p>
+    </div>
+
+    <div class="login-card flex flex-col bg-white rounded-lg shadow-md p-6 w-full gap-2">
+        <h1 class="font-bold text-xl">Get Started with Iotility</h1>
+        <p class="text-xs">Already have an account? <a class="text-blue-700 font-semibold" href="auth/login">Login here!</a></p>
+    
+        <div class="input-fields flex flex-col gap-2 mt-6">
+            <div class="input-field flex flex-col gap-1">
+                <label for="name" class="text-xs font-semibold">Full Name</label>
+                <div class="field flex flex-row items-center w-full bg-gray-100 p-2 rounded-lg">
+                    <i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.1404 21.6199C17.2604 21.8799 16.2204 21.9999 15.0004 21.9999H9.00035C7.78035 21.9999 6.74035 21.8799 5.86035 21.6199C6.08035 19.0199 8.75035 16.9698 12.0004 16.9698C15.2504 16.9698 17.9204 19.0199 18.1404 21.6199Z" stroke="#17181A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 2H9C4 2 2 4 2 9V15C2 18.78 3.14 20.85 5.86 21.62C6.08 19.02 8.75 16.97 12 16.97C15.25 16.97 17.92 19.02 18.14 21.62C20.86 20.85 22 18.78 22 15V9C22 4 20 2 15 2ZM12 14.17C10.02 14.17 8.42 12.56 8.42 10.58C8.42 8.60002 10.02 7 12 7C13.98 7 15.58 8.60002 15.58 10.58C15.58 12.56 13.98 14.17 12 14.17Z" stroke="#17181A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.5799 10.5801C15.5799 12.5601 13.9799 14.1701 11.9999 14.1701C10.0199 14.1701 8.41992 12.5601 8.41992 10.5801C8.41992 8.60014 10.0199 7.00012 11.9999 7.00012C13.9799 7.00012 15.5799 8.60014 15.5799 10.5801Z" stroke="#17181A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </i>
+                    <div class="w-px h-full ml-2 mr-1 bg-gray-500"></div>
+                    <input type="text" placeholder="i.e. Haris Khan"
+                        class="bg-transparent w-full border-0 text-xs focus:outline-none focus:ring-0 focus:border-0 placeholder-gray-600" />
+                </div>
+            </div>
+    
+            <div class="input-field flex flex-col gap-1">
+                <label for="number" class="text-xs font-semibold">Contact No.</label>
+                <div class="field flex flex-row items-center w-full bg-gray-100 p-2 rounded-lg">
+                    <i><svg class="ml-0.5" width="15" height="15" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.66965 9.7014C6.44762 11.2919 7.73687 12.5753 9.3309 13.346C9.44753 13.4013 9.57654 13.4252 9.70523 13.4155C9.83392 13.4058 9.95786 13.3627 10.0648 13.2905L12.4119 11.7254C12.5157 11.6562 12.6352 11.6139 12.7594 11.6025C12.8837 11.5911 13.0088 11.6109 13.1235 11.66L17.5144 13.5419C17.6636 13.6052 17.7881 13.7154 17.8693 13.8556C17.9504 13.9959 17.9838 14.1588 17.9643 14.3197C17.8255 15.4057 17.2956 16.4039 16.4739 17.1273C15.6521 17.8508 14.5948 18.2499 13.5 18.25C10.1185 18.25 6.87548 16.9067 4.48439 14.5156C2.0933 12.1245 0.75 8.88148 0.75 5.49997C0.750058 4.40513 1.14918 3.34786 1.87264 2.5261C2.5961 1.70435 3.59428 1.17448 4.68028 1.03569C4.84117 1.01622 5.00403 1.04956 5.14432 1.1307C5.28461 1.21183 5.39473 1.33636 5.4581 1.48552L7.34158 5.88032C7.3903 5.994 7.41015 6.11796 7.39936 6.24116C7.38858 6.36436 7.3475 6.48299 7.27977 6.58647L5.72011 8.96957C5.64912 9.07677 5.60716 9.20056 5.59831 9.32883C5.58947 9.4571 5.61405 9.58547 5.66965 9.7014V9.7014Z" stroke="#17181A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                             
+                        </i>
+                    <div class="w-px h-full ml-2 mr-1 bg-gray-500"></div>
+                    <input type="tel" placeholder="(44) 564 545 645"
+                        class="bg-transparent w-full border-0 text-xs focus:outline-none focus:ring-0 focus:border-0 placeholder-gray-600" />
+                </div>
+            </div>
+
+            <div class="input-field flex flex-col gap-1">
+                <label for="company" class="text-xs font-semibold">Company Name</label>
+                <div class="field flex flex-row items-center w-full bg-gray-100 p-2 rounded-lg">
+                    <i><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9999 13.4299C13.723 13.4299 15.1199 12.0331 15.1199 10.3099C15.1199 8.58681 13.723 7.18994 11.9999 7.18994C10.2768 7.18994 8.87988 8.58681 8.87988 10.3099C8.87988 12.0331 10.2768 13.4299 11.9999 13.4299Z" stroke="#17181A" stroke-width="1.5"/>
+                        <path d="M3.61971 8.49C5.58971 -0.169998 18.4197 -0.159997 20.3797 8.5C21.5297 13.58 18.3697 17.88 15.5997 20.54C13.5897 22.48 10.4097 22.48 8.38971 20.54C5.62971 17.88 2.46971 13.57 3.61971 8.49Z" stroke="#17181A" stroke-width="1.5"/>
+                        </svg>
+                        </i>
+                    <div class="w-px h-full ml-2 mr-1 bg-gray-500"></div>
+                    <input type="text" placeholder="i.e. HyperNym"
+                        class="bg-transparent w-full border-0 text-xs focus:outline-none focus:ring-0 focus:border-0 placeholder-gray-600" />
+                </div>
+            </div>
+
+            <div class="input-field flex flex-col gap-1">
+                <label for="email" class="text-xs font-semibold">Email Address</label>
+                <div class="field flex flex-row items-center w-full bg-gray-100 p-2 rounded-lg">
+                    <i><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g id="icon=Mail">
+                                <path id="Vector"
+                                    d="M4 6.00024L10.1076 10.6125L10.1097 10.6142C10.7878 11.1115 11.1271 11.3603 11.4988 11.4565C11.8272 11.5414 12.1725 11.5414 12.501 11.4565C12.8729 11.3603 13.2132 11.1107 13.8926 10.6125C13.8926 10.6125 17.8101 7.60618 20 6.00024M3 15.8004V8.20044C3 7.08033 3 6.51986 3.21799 6.09204C3.40973 5.71572 3.71547 5.40998 4.0918 5.21823C4.51962 5.00024 5.08009 5.00024 6.2002 5.00024H17.8002C18.9203 5.00024 19.4796 5.00024 19.9074 5.21823C20.2837 5.40998 20.5905 5.71572 20.7822 6.09204C21 6.51945 21 7.07924 21 8.19715V15.8038C21 16.9217 21 17.4807 20.7822 17.9081C20.5905 18.2844 20.2837 18.5907 19.9074 18.7825C19.48 19.0002 18.921 19.0002 17.8031 19.0002H6.19691C5.07899 19.0002 4.5192 19.0002 4.0918 18.7825C3.71547 18.5907 3.40973 18.2844 3.21799 17.9081C3 17.4803 3 16.9205 3 15.8004Z"
+                                    stroke="#17181A" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                        </svg></i>
+                    <div class="w-px h-full ml-2 mr-1 bg-gray-500"></div>
+                    <input type="email" placeholder="i.e. hariskhan@metispvt.com"
+                        class="bg-transparent w-full border-0 text-xs focus:outline-none focus:ring-0 focus:border-0 placeholder-gray-600" />
+                </div>
+            </div>
+
+            <div class="input-field flex flex-col gap-1">
+                <label for="password" class="text-xs font-semibold">Password</label>
+                <div class="field flex flex-row items-center w-full bg-gray-100 p-2 rounded-lg">
+                    <i><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9.99969V7.99969C6 4.68969 7 1.99969 12 1.99969C17 1.99969 18 4.68969 18 7.99969V9.99969"
+                                stroke="#17181A" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M12 18.5C13.3807 18.5 14.5 17.3807 14.5 16C14.5 14.6193 13.3807 13.5 12 13.5C10.6193 13.5 9.5 14.6193 9.5 16C9.5 17.3807 10.6193 18.5 12 18.5Z"
+                                stroke="#17181A" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M17 22H7C3 22 2 21 2 17V15C2 11 3 10 7 10H17C21 10 22 11 22 15V17C22 21 21 22 17 22Z"
+                                stroke="#17181A" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></i>
+                    <div class="w-px h-full ml-2 mr-1 bg-gray-500"></div>
+                    <input type="password" placeholder="Your password"
+                        class="bg-transparent w-full border-0 text-xs focus:outline-none focus:ring-0 focus:border-0 placeholder-gray-600" />
+                </div>
+            </div>
+        </div>
+    
+        <div class="flex flex-row justify-start items-center">
+            <p class="text-xs">*By clicking continue you agree to our 
+                <a href="auth/forgot-password" class="text-blue-700 font-semibold">privacy policy</a> and 
+                <a href="auth/forgot-password" class="text-blue-700 font-semibold">terms & conditions</a>*
+            </p>     
+        </div>
+        
+        <div class="login-button flex flex-row mt-4">
+            <button
+                class="bg-gradient-to-r from-[#6300D6] to-[#8938E7] text-white font-light text-xs py-2 px-2 rounded-full w-full flex items-center justify-center gap-2 mb-1">
+                CONTINUE
+                <i>
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.5 4.99976L16.5 11.9998L9.5 18.9998" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </i>
+            </button>
+        </div>
+    </div>
+</div>

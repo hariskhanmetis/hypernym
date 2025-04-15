@@ -1,7 +1,7 @@
 <div class="grid grid-cols-12 w-screen h-screen overflow-hidden">
     <!-- Left Panel -->
      
-    <div class="left flex flex-col justify-between h-full col-span-8 bg-black relative w-full">
+    <div class="left flex flex-col justify-between h-full col-span-8 bg-black relative w-full overflow-hidden">
         <div class="logos flex items-center p-2 h-[45px] mt-2">
             <img src="assets/hypernym-logo.png" alt="Hypernym-Logo" class="w-[13%] p-2">
             <div class="w-0.5 h-10 ml-2 mr-2 bg-white"></div>
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Right Panel -->
-    <div class="col-span-4" style="background-color: #F7F6FF">
+    <div class="col-span-4 overflow-y-auto" style="background-color: #F7F6FF">
         <router-outlet></router-outlet>
     </div>
 </div>
