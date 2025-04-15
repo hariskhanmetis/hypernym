@@ -1,14 +1,25 @@
 .branding {
     background-image: url('../../assets/background/group.png');
-    background-size: 48rem;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 26rem;
-    
 }
 
 .background {
     background-image: url('../../assets/background/ellipse.png');
-    background-size: cover;
+    background-size:cover;
+    background-repeat: no-repeat;
     background-position: center;
+    top: 40%;
+    height: 100%;
+}
+
+.hlogo {
+    top: 35%;
+}
+
+.connection-line {
+    position: absolute;
+    background-color: #8B5CF6;
+    height: 2px;
+    transform-origin: left center;
 }
