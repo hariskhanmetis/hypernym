@@ -5,7 +5,17 @@
     </div>
 
     <div class="login-card flex flex-col bg-white rounded-lg shadow-md p-6 w-full gap-2">
-        <h1 class="font-bold text-xl">Get Started with Iotility</h1>
+        <div class="flex flex-row items-center gap-2.5">
+            <a href="auth/login">
+                <i>
+                    <svg width="14" height="16" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 1.49976L2 11.9998L12.5 22.4998" stroke="#1A1A1A" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </i>
+            </a>
+            <h1 class="font-bold text-xl">Get Started with Iotility</h1>
+        </div>
         <p class="text-xs">Already have an account? <a class="text-blue-700 font-semibold" href="auth/login">Login here!</a></p>
     
         <div class="input-fields flex flex-col gap-2 mt-6">
@@ -102,7 +112,7 @@
         </div>
         
         <div class="login-button flex flex-row mt-4">
-            <button
+            <button (click)="navigateToLogin()"
                 class="bg-gradient-to-r from-[#6300D6] to-[#8938E7] text-white font-light text-xs py-2 px-2 rounded-full w-full flex items-center justify-center gap-2 mb-1">
                 CONTINUE
                 <i>
