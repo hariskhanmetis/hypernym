@@ -1,7 +1,8 @@
 .branding {
     background-image: url('../../assets/background/group.png');
-    background-size: 100%;
+    background-size: 99%;
     background-repeat: no-repeat;
+    background-position-y: center;
 }
 
 .background {
@@ -13,13 +14,12 @@
     height: 100%;
 }
 
-.hlogo {
-    top: 35%;
+.h-logo {
+    top: 45%;
 }
 
-.connection-line {
-    position: absolute;
-    background-color: #8B5CF6;
-    height: 2px;
-    transform-origin: left center;
+.graph {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 50px;
 }
