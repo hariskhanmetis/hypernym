@@ -1,0 +1,12 @@
+.background {
+    background-image: url('../../assets/backgrounds/ellipse2.png');
+    background-size: cover;
+}
+
+.text-xs {
+    font-size: 0.52rem;
+}
+
+.sidebar {
+    width: 5.4rem;
+}
