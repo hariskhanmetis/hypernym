@@ -1,12 +1,12 @@
 .branding {
-    background-image: url('../../assets/background/group.png');
+    background-image: url('../../assets/backgrounds/group.png');
     background-size: 99%;
     background-repeat: no-repeat;
     background-position-y: center;
 }
 
 .background {
-    background-image: url('../../assets/background/ellipse.png');
+    background-image: url('../../assets/backgrounds/ellipse.png');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;

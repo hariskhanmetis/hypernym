@@ -8,7 +8,7 @@
 }
 
 .sidebar {
-    width: 5.4rem;
+    width: 6rem;
 }
 
 .navbar-text {
@@ -17,4 +17,12 @@
 
 .toogle-text {
     font-size: 0.68rem;
+}
+
+.card-text {
+    font-size: 0.54rem;
+}
+
+.btn {
+    height: 1.5rem;
 }

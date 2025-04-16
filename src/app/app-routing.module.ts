@@ -7,6 +7,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { VerifyEmailComponent } from './verify-email/verify-email.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { BuyComponent } from './buy/buy.component';
 
 const routes: Routes = [
   {
