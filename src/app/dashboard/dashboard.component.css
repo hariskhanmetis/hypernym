@@ -3,10 +3,14 @@
     background-size: cover;
 }
 
-.text-xs {
+.sidebar-text {
     font-size: 0.52rem;
 }
 
 .sidebar {
     width: 5.4rem;
+}
+
+.navbar-text {
+    font-size: 0.6rem;
 }
