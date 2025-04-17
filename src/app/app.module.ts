@@ -12,6 +12,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { BuyComponent } from './buy/buy.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { BuyComponent } from './buy/buy.component';
     ResetPasswordComponent,
     DashboardComponent,
     WelcomeComponent,
-    BuyComponent
+    BuyComponent,
+    SidebarComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
