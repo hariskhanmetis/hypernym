@@ -14,8 +14,11 @@ import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { SettingsComponent } from './settings/settings.component';
 import { BillingComponent } from './billing/billing.component';
+import { FleetpointSidebarComponent } from './fleetpoint-sidebar/fleetpoint-sidebar.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
 
 const routes: Routes = [
+  // Authentication Routes
   {
     path: 'auth',
     component: AuthenticationComponent,
@@ -28,6 +31,8 @@ const routes: Routes = [
       { path: '', redirectTo: 'login', pathMatch: 'full' },
     ],
   },
+
+  // Dashboard Routes
   {
     path: 'dashboard',
     component: DashboardComponent,
@@ -39,13 +44,22 @@ const routes: Routes = [
       { path: 'users', component: UsersComponent },
       { path: 'settings', component: SettingsComponent },
       { path: 'billing', component: BillingComponent },
-      
-      { path: 'fleetpoint', component: FleetpointComponent },
-      
-      { path: '', redirectTo: 'welcome', pathMatch: 'full' }, 
+
+      // Fleetpoint Routes
+      {
+        path: 'fleetpoint',
+        component: FleetpointComponent,
+        children: [
+          { path: '', component: FleetpointSidebarComponent }, 
+          { path: 'thankyou', component: ThankyouComponent }, 
+        ],
+      },
+
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' },
     ],
   },
-  { path: '', redirectTo: 'auth', pathMatch: 'full' }, 
+
+  { path: '', redirectTo: 'auth', pathMatch: 'full' },
   { path: '**', redirectTo: 'auth/login' },
 ];
 

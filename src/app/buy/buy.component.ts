@@ -10,7 +10,7 @@ export class BuyComponent {
   constructor (private router: Router) { }
 
   navigateToFleetpoint() {
-    this.router.navigate(['/dashboard/fleetpoint']);
+    this.router.navigate(['dashboard/fleetpoint/thankyou']);
   }
 
 }

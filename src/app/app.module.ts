@@ -20,6 +20,7 @@ import { UsersComponent } from './users/users.component';
 import { SettingsComponent } from './settings/settings.component';
 import { BillingComponent } from './billing/billing.component';
 import { FleetpointSidebarComponent } from './fleetpoint-sidebar/fleetpoint-sidebar.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FleetpointSidebarComponent } from './fleetpoint-sidebar/fleetpoint-side
     UsersComponent,
     SettingsComponent,
     BillingComponent,
-    FleetpointSidebarComponent
+    FleetpointSidebarComponent,
+    ThankyouComponent
   ],
   imports: [
     BrowserModule,
