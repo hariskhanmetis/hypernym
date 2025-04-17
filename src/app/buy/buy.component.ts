@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-buy',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./buy.component.css']
 })
 export class BuyComponent {
+  constructor (private router: Router) { }
+
+  navigateToFleetpoint() {
+    this.router.navigate(['/dashboard/fleetpoint']);
+  }
 
 }

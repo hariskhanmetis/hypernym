@@ -14,6 +14,12 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { BuyComponent } from './buy/buy.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FleetpointComponent } from './fleetpoint/fleetpoint.component';
+import { HomeComponent } from './home/home.component';
+import { UsersComponent } from './users/users.component';
+import { SettingsComponent } from './settings/settings.component';
+import { BillingComponent } from './billing/billing.component';
+import { FleetpointSidebarComponent } from './fleetpoint-sidebar/fleetpoint-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +34,13 @@ import { NavbarComponent } from './navbar/navbar.component';
     WelcomeComponent,
     BuyComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    FleetpointComponent,
+    HomeComponent,
+    UsersComponent,
+    SettingsComponent,
+    BillingComponent,
+    FleetpointSidebarComponent
   ],
   imports: [
     BrowserModule,

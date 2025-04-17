@@ -9,6 +9,11 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { BuyComponent } from './buy/buy.component';
+import { FleetpointComponent } from './fleetpoint/fleetpoint.component';
+import { HomeComponent } from './home/home.component';
+import { UsersComponent } from './users/users.component';
+import { SettingsComponent } from './settings/settings.component';
+import { BillingComponent } from './billing/billing.component';
 
 const routes: Routes = [
   {
@@ -29,6 +34,14 @@ const routes: Routes = [
     children: [
       { path: 'welcome', component: WelcomeComponent },
       { path: 'buy', component: BuyComponent },
+
+      { path: 'home', component: HomeComponent },
+      { path: 'users', component: UsersComponent },
+      { path: 'settings', component: SettingsComponent },
+      { path: 'billing', component: BillingComponent },
+      
+      { path: 'fleetpoint', component: FleetpointComponent },
+      
       { path: '', redirectTo: 'welcome', pathMatch: 'full' }, 
     ],
   },
