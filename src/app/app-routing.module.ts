@@ -23,7 +23,16 @@ const routes: Routes = [
       { path: '', redirectTo: 'login', pathMatch: 'full' },
     ],
   },
-  { path: 'dashboard', component: DashboardComponent },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
+      { path: 'welcome', component: WelcomeComponent },
+      { path: 'buy', component: BuyComponent },
+      { path: '', redirectTo: 'welcome', pathMatch: 'full' }, 
+    ],
+  },
+  { path: '', redirectTo: 'auth', pathMatch: 'full' }, 
   { path: '**', redirectTo: 'auth/login' },
 ];
 

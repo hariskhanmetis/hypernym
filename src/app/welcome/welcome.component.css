@@ -1,0 +1,28 @@
+.background {
+    background-image: url('../../assets/backgrounds/ellipse2.png');
+    background-size: cover;
+}
+
+.sidebar-text {
+    font-size: 0.52rem;
+}
+
+.sidebar {
+    width: 6rem;
+}
+
+.navbar-text {
+    font-size: 0.6rem;
+}
+
+.toogle-text {
+    font-size: 0.68rem;
+}
+
+.card-text {
+    font-size: 0.54rem;
+}
+
+.btn {
+    height: 1.5rem;
+}
