@@ -31,6 +31,12 @@ import { MaintainanceComponent } from './maintainance/maintainance.component';
 import { ReportsComponent } from './reports/reports.component';
 import { FuelTrackingComponent } from './fuel-tracking/fuel-tracking.component';
 import { DashboardsComponent } from './dashboards/dashboards.component';
+import { SettingsSidebarComponent } from './settings-sidebar/settings-sidebar.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { MeasuresComponent } from './measures/measures.component';
+import { CountriesComponent } from './countries/countries.component';
+import { SettingsAndPrivacyComponent } from './settings-and-privacy/settings-and-privacy.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +68,13 @@ import { DashboardsComponent } from './dashboards/dashboards.component';
     MaintainanceComponent,
     ReportsComponent,
     FuelTrackingComponent,
-    DashboardsComponent
+    DashboardsComponent,
+    SettingsSidebarComponent,
+    NotificationsComponent,
+    AccountSettingsComponent,
+    MeasuresComponent,
+    CountriesComponent,
+    SettingsAndPrivacyComponent
   ],
   imports: [
     BrowserModule,

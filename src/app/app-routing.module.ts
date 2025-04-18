@@ -26,6 +26,13 @@ import { JobsComponent } from './jobs/jobs.component';
 import { MaintainanceComponent } from './maintainance/maintainance.component';
 import { ReportsComponent } from './reports/reports.component';
 import { FuelTrackingComponent } from './fuel-tracking/fuel-tracking.component';
+import { SettingsSidebarComponent } from './settings-sidebar/settings-sidebar.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { SettingsAndPrivacyComponent } from './settings-and-privacy/settings-and-privacy.component';
+import { MeasuresComponent } from './measures/measures.component';
+import { CountriesComponent } from './countries/countries.component';
+
 
 const routes: Routes = [
   // Authentication Routes
@@ -52,7 +59,21 @@ const routes: Routes = [
 
       { path: 'home', component: HomeComponent },
       { path: 'users', component: UsersComponent },
-      { path: 'settings', component: SettingsComponent },
+
+      // Settings Routes
+      {
+        path: 'settings',
+        component: SettingsComponent,
+        children: [
+          { path: '', component: SettingsSidebarComponent },
+          { path: 'notifications', component: NotificationsComponent },
+          { path: 'account-settings', component: AccountSettingsComponent },
+          { path: 'settings-and-privacy', component: SettingsAndPrivacyComponent },
+          { path: 'measures', component: MeasuresComponent },
+          { path: 'countries', component: CountriesComponent },
+        ],
+      },
+
       { path: 'billing', component: BillingComponent },
 
       // Fleetpoint Routes
@@ -60,7 +81,7 @@ const routes: Routes = [
         path: 'fleetpoint',
         component: FleetpointComponent,
         children: [
-          { path: '', component: FleetpointSidebarComponent }, 
+          { path: '', component: FleetpointSidebarComponent },
           { path: 'thankyou', component: ThankyouComponent },
           { path: 'dashboards', component: DashboardsComponent },
           { path: 'dashcams', component: DashcamsComponent },
