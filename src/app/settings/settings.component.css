@@ -1,0 +1,29 @@
+.dashboard-text {
+    font-size: 0.62rem;
+}
+
+.dashboard-heading-text {
+    font-size: 0.5rem;
+}
+
+.heading-p {
+    font-size: 0.54rem;
+}
+
+.notification-text {
+    font-size: 0.66rem;
+}
+
+.notification-heading {
+    font-size: 0.66rem;
+}
+
+.toogle-circle {
+    top: 6px;
+    left: 1.4px;
+}
+
+.checkbox {
+    height: 13.4px;
+    width: 25px;
+}
