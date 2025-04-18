@@ -16,6 +16,16 @@ import { SettingsComponent } from './settings/settings.component';
 import { BillingComponent } from './billing/billing.component';
 import { FleetpointSidebarComponent } from './fleetpoint-sidebar/fleetpoint-sidebar.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+import { DashboardsComponent } from './dashboards/dashboards.component';
+import { DashcamsComponent } from './dashcams/dashcams.component';
+import { FleetsComponent } from './fleets/fleets.component';
+import { DriversComponent } from './drivers/drivers.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { RoutesComponent } from './routes/routes.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { MaintainanceComponent } from './maintainance/maintainance.component';
+import { ReportsComponent } from './reports/reports.component';
+import { FuelTrackingComponent } from './fuel-tracking/fuel-tracking.component';
 
 const routes: Routes = [
   // Authentication Routes
@@ -51,7 +61,17 @@ const routes: Routes = [
         component: FleetpointComponent,
         children: [
           { path: '', component: FleetpointSidebarComponent }, 
-          { path: 'thankyou', component: ThankyouComponent }, 
+          { path: 'thankyou', component: ThankyouComponent },
+          { path: 'dashboards', component: DashboardsComponent },
+          { path: 'dashcams', component: DashcamsComponent },
+          { path: 'fleets', component: FleetsComponent },
+          { path: 'drivers', component: DriversComponent },
+          { path: 'vehicles', component: VehiclesComponent },
+          { path: 'routes', component: RoutesComponent },
+          { path: 'jobs', component: JobsComponent },
+          { path: 'maintainance', component: MaintainanceComponent },
+          { path: 'reports', component: ReportsComponent },
+          { path: 'fuel-tracking', component: FuelTrackingComponent },
         ],
       },
 
