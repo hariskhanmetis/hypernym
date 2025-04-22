@@ -68,7 +68,7 @@ const routes: Routes = [
           { path: '', component: SettingsSidebarComponent },
           { path: 'notifications', component: NotificationsComponent },
           { path: 'account-settings', component: AccountSettingsComponent },
-          { path: 'settings-and-privacy', component: SettingsAndPrivacyComponent },
+          { path: 'security-and-privacy', component: SettingsAndPrivacyComponent },
           { path: 'measures', component: MeasuresComponent },
           { path: 'countries', component: CountriesComponent },
         ],

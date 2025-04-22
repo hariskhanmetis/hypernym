@@ -1,7 +1,80 @@
 <!-- Account Settings -->
-<div class="flex flex-col gap-2 w-full">
+<div class="flex flex-col gap-5 w-full">
     <div class="flex flex-col gap-1">
         <h2 class="font-bold">Account Settings</h2>
         <p class="heading-p text-gray-600">You can update your account settings here.</p>
+    </div>
+
+    <div>
+        <h1 class="text-sm font-bold">Account Details</h1>
+    </div>
+
+    <div class="flex flex-col gap-2.5 w-full">
+        <div class="flex flex-row items-center">
+            <h5 class="account-settings font-bold">Upload Profile Image</h5>
+
+            <div class="flex flex-row justify-center items-center gap-5 ml-36">
+                <div
+                    class="w-11 h-11 rounded-full border border-gray-200 bg-transparent flex items-center justify-center">
+                    <img src="assets/icons/icon_user.png" alt="" class="h-auto w-4">
+                </div>
+                <div class="flex flex-col justify-center items-start gap-1">
+                    <button
+                        class="border bg-transparent border-gray-200 rounded-md px-1 py-px font-bold text-gray-500 account-settings flex flex-row items-center justify-center gap-1">
+                        <i>
+                            <svg width="12" height="12" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4.00033 7.33346V4.13346C4.00033 3.38673 4.00033 3.01308 4.14565 2.72786C4.27348 2.47698 4.47731 2.27316 4.72819 2.14532C5.01341 2 5.38705 2 6.13379 2H9.1168C9.19851 2 9.26999 2 9.33366 2.00058M13.333 6C13.3336 6.06374 13.3337 6.13531 13.3337 6.21712V11.869C13.3337 12.6143 13.3337 12.987 13.1885 13.2719C13.0606 13.5228 12.8563 13.727 12.6054 13.8548C12.3204 14 11.9477 14 11.2024 14L8.66699 14M13.333 6C13.3312 5.80967 13.3241 5.68917 13.2965 5.57422C13.2639 5.43817 13.2098 5.30809 13.1367 5.1888C13.0542 5.05424 12.9396 4.93926 12.709 4.70865L10.6253 2.625C10.3949 2.39454 10.2794 2.27904 10.1449 2.19661C10.0256 2.12351 9.8956 2.0695 9.75955 2.03684C9.64455 2.00923 9.52408 2.00231 9.33366 2.00058M13.333 6H13.3338M13.333 6H11.4649C10.7197 6 10.3465 6 10.0615 5.85482C9.81064 5.72699 9.60681 5.52261 9.47898 5.27173C9.33366 4.98651 9.33366 4.6134 9.33366 3.86667V2.00058M6.00033 9.33333L7.33366 10.6667M2.66699 14V12.3333L7.66699 7.33333L9.33366 9L4.33366 14H2.66699Z"
+                                    stroke="#4A4A4A" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </i>
+                        <span class="mt-px">Edit</span>
+                    </button>
+                    <div>
+                        <p class="account-settings font-semibold text-gray-500">Recommended size is 200x200 px</p>
+                        <p class="account-settings font-semibold text-gray-500">Files up to 5 MB</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flex flex-row justify-between items-center mt-6">
+            <h5 class="account-settings font-bold w-10">Name</h5>
+            <input type="text" placeholder="" value="Haris Khan"
+                class="border ml-44 border-gray-200 rounded-md px-2.5 py-1.5 w-3/4 input-text text-gray-800 font-semibold"> 
+        </div>
+
+        <div class="h-px w-full bg-gray-300"></div>
+
+        <div class="flex flex-row justify-between items-center mt-1.5">
+            <h5 class="account-settings font-bold w-10">Email</h5>
+            <input type="text" placeholder="" value="hariskhan@metispvt.com"
+                class="border ml-44 border-gray-200 rounded-md px-2.5 py-1.5 w-3/4 input-text text-gray-800 font-semibold"> 
+        </div>
+
+        <div class="h-px w-full bg-gray-300"></div>
+
+        <div class="flex flex-row justify-between items-center mt-1.5">
+            <h5 class="account-settings font-bold w-10">Phone No.</h5>
+            <input type="text" placeholder="" value="123-456-789-0"
+                class="border ml-44 border-gray-200 rounded-md px-2.5 py-1.5 w-3/4 input-text text-gray-800 font-semibold"> 
+        </div>
+
+        <div class="h-px w-full bg-gray-300"></div>
+
+        <div class="flex flex-row justify-between items-center mt-1.5">
+            <h5 class="account-settings font-bold w-10">Role</h5>
+            <select class="border ml-44 border-gray-200 rounded-md px-1.5 py-1.5 w-3/4 input-text text-gray-800 font-semibold">
+                <option value="sa">Super Admin</option>
+                <option value="fm" selected>Fleet Manager</option>
+                <option value="wo">Workshop Owner</option>
+                <option value="wm">Workshop Mechanic</option>
+            </select>
+        </div>
+
+        <div class="h-px w-full bg-gray-300"></div>
+
     </div>
 </div>
