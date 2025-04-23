@@ -14,3 +14,6 @@
     filter: invert(1) brightness(2); 
 }
 
+a.dashboards-active .active-icon {
+    filter: none !important;
+}
