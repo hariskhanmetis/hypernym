@@ -4,7 +4,7 @@
         <img src="assets/hypernym-logo-h.png" alt="hypernym-logo" class="w-11 h-auto">
     </div>
 
-    <div (click)="openModal()" class="useCases flex flex-col justify-center items-center gap-0.5 mt-2 cursor-pointer">
+    <div (click)="openModal()" class="useCases z-50 flex flex-col justify-center items-center gap-0.5 mt-2 cursor-pointer">
         <div class="bg-gray-900 bg-opacity-70 rounded-full p-2.5">
             <i>
                 <svg width="17" height="18" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,12 +124,17 @@
     </div>
 </div>
 
-<div *ngIf="isModalOpen" class="fixed inset-0 bg-black bg-opacity-50 z-40" (click)="closeModal()"></div>
+<div *ngIf="isModalOpen" class="fixed inset-0 bg-black bg-opacity-50 z-40" (click) = "closeModal()"></div>
 
 <!-- Menu Panel -->
-<div *ngIf="isModalOpen" 
-    class="fixed top-24 left-24 z-50 bg-white rounded shadow-lg pl-4 pr-8 pt-3.5 pb-5 flex flex-col gap-3 overflow-y-auto">
-
+<div *ngIf="isModalOpen"
+#modal
+class="fixed top-24 left-24 z-50 bg-white rounded shadow-lg pl-4 pr-8 pt-3.5 pb-5 flex flex-col gap-3
+       transform opacity-0 transition-all duration-500 ease-in-out"
+[ngClass]="{
+  'translate-x-0 opacity-100': modalVisible,
+  '-translate-x-full': !modalVisible
+}">
     <h2 class="text-xs font-bold">Use Case</h2>
     <div class="grid grid-cols-4 gap-x-9 gap-y-7">
         <div (click)="navigateToFleetpoint()" class="flex flex-col justify-center items-center gap-1 cursor-pointer">
