@@ -4,7 +4,7 @@
         <img src="assets/hypernym-logo-h.png" alt="hypernym-logo" class="w-11 h-auto">
     </div>
 
-    <div class="useCases flex flex-col justify-center items-center gap-0.5 mt-2">
+    <div (click)="openModal()" class="useCases flex flex-col justify-center items-center gap-0.5 mt-2 cursor-pointer">
         <div class="bg-gray-900 bg-opacity-70 rounded-full p-2.5">
             <i>
                 <svg width="17" height="18" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,8 @@
     </div>
 
     <div class="home">
-        <a routerLink="/dashboard/home" routerLinkActive="active-icon"  class="flex flex-col justify-center items-center">
+        <a routerLink="/dashboard/home" routerLinkActive="active-icon"
+            class="flex flex-col justify-center items-center">
             <div class="icon-container rounded-full p-3">
                 <i>
                     <svg width="17" height="16" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +44,8 @@
     </div>
 
     <div class="users">
-        <a routerLink="/dashboard/users" routerLinkActive="active-icon" class="flex flex-col justify-center items-center">
+        <a routerLink="/dashboard/users" routerLinkActive="active-icon"
+            class="flex flex-col justify-center items-center">
             <div class="icon-container rounded-full p-3">
                 <i>
                     <svg width="17" height="16" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +70,8 @@
     </div>
 
     <div class="settings">
-        <a routerLink="/dashboard/settings/notifications" routerLinkActive="active-icon" class="flex flex-col justify-center items-center">
+        <a routerLink="/dashboard/settings/notifications" routerLinkActive="active-icon"
+            class="flex flex-col justify-center items-center">
             <div class="icon-container rounded-full p-3">
                 <i>
                     <svg width="17" height="16" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +89,8 @@
     </div>
 
     <div class="billing">
-        <a routerLink="/dashboard/billing" routerLinkActive="active-icon" class="flex flex-col justify-center items-center">
+        <a routerLink="/dashboard/billing" routerLinkActive="active-icon"
+            class="flex flex-col justify-center items-center">
             <div class="icon-container rounded-full p-3">
                 <i>
                     <svg width="17" height="16" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,5 +121,44 @@
                 <h5 class="sidebar-text text-gray-300">Help</h5>
             </div>
         </a>
+    </div>
+</div>
+
+<div *ngIf="isModalOpen" class="fixed inset-0 bg-black bg-opacity-50 z-40" (click)="closeModal()"></div>
+
+<!-- Menu Panel -->
+<div *ngIf="isModalOpen" 
+    class="fixed top-24 left-24 z-50 bg-white rounded shadow-lg pl-4 pr-8 pt-3.5 pb-5 flex flex-col gap-3 overflow-y-auto">
+
+    <h2 class="text-xs font-bold">Use Case</h2>
+    <div class="grid grid-cols-4 gap-x-9 gap-y-7">
+        <div (click)="navigateToFleetpoint()" class="flex flex-col justify-center items-center gap-1 cursor-pointer">
+            <img src="assets/card-icons/fleetpoint.svg" alt="" class="w-14 h-auto">
+            <p class="navbar-text">FleetPoint</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1 cursor-pointer">
+            <img src="assets/card-icons/assetrack.png" alt="" class="w-14 h-auto">
+            <p class="navbar-text">AssetRack</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1 cursor-pointer">
+            <img src="assets/card-icons/sustainex.png" alt="" class="w-14 h-auto">
+            <p class="navbar-text">SustainEx</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1 cursor-pointer">
+            <img src="assets/card-icons/genset.png" alt="" class="w-14 h-auto">
+            <p class="navbar-text">GenSet</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1 cursor-pointer">
+            <img src="assets/card-icons/wasterack.png" alt="" class="w-14 h-auto">
+            <p class="navbar-text">WasteRack</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1 cursor-pointer">
+            <img src="assets/card-icons/twinscape.png" alt="" class="w-14 h-auto">
+            <p class="navbar-text">TwinScape</p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-1 cursor-pointer">
+            <img src="assets/card-icons/dashiq.png" alt="" class="w-14 h-auto">
+            <p class="navbar-text">DashIQ</p>
+        </div>
     </div>
 </div>
