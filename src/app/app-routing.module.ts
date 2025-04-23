@@ -56,7 +56,6 @@ const routes: Routes = [
     children: [
       { path: 'welcome', component: WelcomeComponent },
       { path: 'buy', component: BuyComponent },
-
       { path: 'home', component: HomeComponent },
       { path: 'users', component: UsersComponent },
 

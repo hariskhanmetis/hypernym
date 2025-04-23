@@ -26,3 +26,15 @@
 .btn {
     height: 1.5rem;
 }
+
+.icon-container {
+    background-color: transparent; 
+}
+
+.active-icon .icon-container {
+    background-color: #ffffff; 
+}
+
+.active-icon svg path {
+    fill: #3B82F6;
+}
