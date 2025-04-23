@@ -37,6 +37,7 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { MeasuresComponent } from './measures/measures.component';
 import { CountriesComponent } from './countries/countries.component';
 import { SettingsAndPrivacyComponent } from './settings-and-privacy/settings-and-privacy.component';
+import { HelpSectionComponent } from './help-section/help-section.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { SettingsAndPrivacyComponent } from './settings-and-privacy/settings-and
     AccountSettingsComponent,
     MeasuresComponent,
     CountriesComponent,
-    SettingsAndPrivacyComponent
+    SettingsAndPrivacyComponent,
+    HelpSectionComponent
   ],
   imports: [
     BrowserModule,

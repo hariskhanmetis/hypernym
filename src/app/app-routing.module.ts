@@ -32,6 +32,7 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { SettingsAndPrivacyComponent } from './settings-and-privacy/settings-and-privacy.component';
 import { MeasuresComponent } from './measures/measures.component';
 import { CountriesComponent } from './countries/countries.component';
+import { HelpSectionComponent } from './help-section/help-section.component';
 
 
 const routes: Routes = [
@@ -74,6 +75,7 @@ const routes: Routes = [
       },
 
       { path: 'billing', component: BillingComponent },
+      { path : 'help', component: HelpSectionComponent },
 
       // Fleetpoint Routes
       {
