@@ -1,5 +1,5 @@
- <!-- Navbar -->
- <div class="navbar flex flex-row w-full justify-between items-center bg-white rounded-lg h-11 p-3">
+<!-- Navbar -->
+<div class="navbar flex flex-row w-full justify-between items-center bg-white rounded-lg h-11 p-3">
     <div class="logo">
         <img src="assets/iotility-logo-black.png" alt="" class="iotility h-auto">
     </div>
@@ -10,12 +10,10 @@
                 class="flex flex-row justify-center items-center border py-0.5 px-1.5 border-gray-300 rounded-3xl gap-1.5">
                 <div>
                     <i>
-                        <svg width="13" height="13" viewBox="0 0 21 21" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                        <svg width="13" height="13" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M19.3828 11.2533C18.2551 12.0305 16.8882 12.4856 15.415 12.4856C11.549 12.4856 8.41504 9.35158 8.41504 5.48559C8.41504 4.01251 8.87006 2.64571 9.64721 1.51807C5.03806 1.90861 1.41895 5.77352 1.41895 10.4837C1.41895 15.4533 5.44755 19.4818 10.4171 19.4818C15.1274 19.4818 18.9924 15.8626 19.3828 11.2533Z"
-                                stroke="#4A4A4A" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                                stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </i>
                 </div>
@@ -23,11 +21,10 @@
             </a>
         </div>
 
-        <div class="notification">
-            <a href="">
+        <div class="notification cursor-pointer" (click)="openModal('notifications')">
+            <a>
                 <i>
-                    <svg width="12" height="16" viewBox="0 0 19 21" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="12" height="16" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M13.7998 15.5C13.7998 17.7091 12.0089 19.5 9.7998 19.5C7.59067 19.5 5.7998 17.7091 5.7998 15.5M16.0994 7.49251L16.2788 11.0808C16.2927 11.3573 16.3637 11.6278 16.4875 11.8754L17.7144 14.3292C17.7706 14.4415 17.7998 14.5654 17.7998 14.691C17.7998 15.1378 17.4376 15.5 16.9908 15.5H2.60882C2.16201 15.5 1.7998 15.1378 1.7998 14.691C1.7998 14.5654 1.82905 14.4415 1.88521 14.3292L3.11211 11.8754C3.23589 11.6278 3.30694 11.3573 3.32076 11.0808L3.50018 7.49251C3.66802 4.13561 6.4387 1.5 9.7998 1.5C13.1609 1.5 15.9316 4.13561 16.0994 7.49251Z"
                             stroke="#6F767E" stroke-width="2" stroke-linejoin="round" />
@@ -36,11 +33,10 @@
             </a>
         </div>
 
-        <div class="messages">
-            <a href="">
+        <div class="messages cursor-pointer" (click)="openModal('messages')">
+            <a>
                 <i>
-                    <svg width="14" height="16" viewBox="0 0 21 19" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="14" height="16" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15.198 11.25H17.2002C18.3048 11.25 19.2002 10.3546 19.2002 9.25V3.25C19.2002 2.14543 18.3048 1.25 17.2002 1.25H7.2002C6.09563 1.25 5.2002 2.14543 5.2002 3.25V5.25M13.2002 5.25H3.2002C2.09563 5.25 1.2002 6.14543 1.2002 7.25V13.25C1.2002 14.3546 2.09563 15.25 3.2002 15.25H4.2002V17.75L8.7002 15.25H13.2002C14.3048 15.25 15.2002 14.3546 15.2002 13.25V7.25C15.2002 6.14543 14.3048 5.25 13.2002 5.25Z"
                             stroke="#6F767E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -49,23 +45,21 @@
             </a>
         </div>
 
-        <div class="addNew">
+        <div class="addNew" (click)="openModal('add-new')">
             <button
                 class="addnew-btn flex flex-row justify-center items-center gap-1 bg-gradient-to-r from-black to-blue-500 py-1.5 px-2 rounded-lg">
                 <i>
-                    <svg width="12" height="11" viewBox="0 0 16 15" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="12" height="11" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M7.59928 4.8335V10.1668M4.93262 7.50016H10.266M14.266 7.50016C14.266 11.1821 11.2812 14.1668 7.59928 14.1668C3.91739 14.1668 0.932617 11.1821 0.932617 7.50016C0.932617 3.81826 3.91739 0.833496 7.59928 0.833496C11.2812 0.833496 14.266 3.81826 14.266 7.50016Z"
-                            stroke="#F5F5F5" stroke-width="1.6" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                            stroke="#F5F5F5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </i>
                 <h5 class="navbar-text text-gray-100">Add New</h5>
             </button>
         </div>
 
-        <div (click)="openModal()" class="flex flex-row justify-center items-center gap-1 cursor-pointer">
+        <div (click)="openModal('profile')" class="flex flex-row justify-center items-center gap-1 cursor-pointer">
             <div class="flex flex-col">
                 <div class="name">
                     <h5 class="navbar-text font-bold">Haris Khan</h5>
@@ -82,33 +76,152 @@
     </div>
 </div>
 
-<div *ngIf="isModalOpen" class="fixed inset-0 bg-black bg-opacity-30 z-40" (click) = "closeModal()"></div>
+<div *ngIf="isModalOpen" class="fixed inset-0 bg-black bg-opacity-30 z-40" (click)="closeModal()"></div>
 
 <!-- Profile Menu -->
-<div *ngIf="isModalOpen"
-#modal
-class="fixed top-16 right-4 z-50 bg-white rounded-xl shadow-lg p-2 flex flex-col
-       transform opacity-0 transition-all duration-500 ease-in-out w-44 border"
-[ngClass]="{
+<div *ngIf="currentMenu === 'profile'" class="fixed top-16 right-4 z-50 bg-white rounded-xl shadow-lg p-2 flex flex-col
+       transform opacity-0 transition-all duration-500 ease-in-out w-44 border" [ngClass]="{
   'translate-y-0 opacity-100': modalVisible,
   '-translate-y-full': !modalVisible
 }">
 
-<a href="dashboard/settings/account-settings" class="flex flex-row justify-start items-center gap-2 hover:bg-gray-100 p-2 rounded-lg">
-    <img src="assets/icons/edit.png" alt="" class="w-3 h-auto">
-    <h5 class="navbar-text text-gray-500 font-bold mt-px">Profile</h5>
-</a>
-<a href="dashboard/settings/account-settings" class="flex flex-row justify-start items-center gap-2 hover:bg-gray-100 p-2 rounded-lg">
-    <img src="assets/icons/message.png" alt="" class="w-3 h-auto">
-    <h5 class="navbar-text text-gray-500 font-bold mt-px">Account Settings</h5>
-</a>
-<a href="dashboard/settings/security-and-privacy" class="flex flex-row justify-start items-center gap-2 hover:bg-gray-100 p-2 rounded-lg">
-    <img src="assets/icons/edit2.png" alt="" class="w-3 h-auto">
-    <h5 class="navbar-text text-gray-500 font-bold mt-px">Change Password</h5>
-</a>
-<a href="auth/login" class="flex flex-row justify-start items-center gap-2 hover:bg-gray-100 p-2 rounded-lg">
-    <img src="assets/icons/link.png" alt="" class="w-3 h-auto">
-    <h5 class="navbar-text text-gray-500 font-bold mt-px">Logout</h5>
-</a>
-    
+    <a href="dashboard/settings/account-settings"
+        class="flex flex-row justify-start items-center gap-2 hover:bg-gray-100 p-2 rounded-lg">
+        <img src="assets/icons/edit.png" alt="" class="w-3 h-auto">
+        <h5 class="navbar-text text-gray-500 font-bold mt-px">Profile</h5>
+    </a>
+    <a href="dashboard/settings/account-settings"
+        class="flex flex-row justify-start items-center gap-2 hover:bg-gray-100 p-2 rounded-lg">
+        <img src="assets/icons/message.png" alt="" class="w-3 h-auto">
+        <h5 class="navbar-text text-gray-500 font-bold mt-px">Account Settings</h5>
+    </a>
+    <a href="dashboard/settings/security-and-privacy"
+        class="flex flex-row justify-start items-center gap-2 hover:bg-gray-100 p-2 rounded-lg">
+        <img src="assets/icons/edit2.png" alt="" class="w-3 h-auto">
+        <h5 class="navbar-text text-gray-500 font-bold mt-px">Change Password</h5>
+    </a>
+    <a href="auth/login" class="flex flex-row justify-start items-center gap-2 hover:bg-gray-100 p-2 rounded-lg">
+        <img src="assets/icons/link.png" alt="" class="w-3 h-auto">
+        <h5 class="navbar-text text-gray-500 font-bold mt-px">Logout</h5>
+    </a>
+
+</div>
+
+<!-- Notifications -->
+<div *ngIf="currentMenu === 'notifications'" class="fixed top-16 right-48 z-50 bg-white rounded-xl shadow-lg py-2.5 px-1.5 flex flex-col
+       transform opacity-0 transition-all duration-500 ease-in-out border w-64 gap-2" [ngClass]="{
+  'translate-y-0 opacity-100': modalVisible,
+  '-translate-y-full': !modalVisible
+}">
+
+    <div class="flex flex-row justify-between items-center">
+        <h2 class="text-xs font-bold">Notifications</h2>
+        <i>
+            <svg width="12" height="12" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8.59961 3.25C9.01382 3.25 9.34961 2.91421 9.34961 2.5C9.34961 2.08579 9.01382 1.75 8.59961 1.75C8.1854 1.75 7.84961 2.08579 7.84961 2.5C7.84961 2.91421 8.1854 3.25 8.59961 3.25Z"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M8.59961 8.75C9.01382 8.75 9.34961 8.41421 9.34961 8C9.34961 7.58579 9.01382 7.25 8.59961 7.25C8.1854 7.25 7.84961 7.58579 7.84961 8C7.84961 8.41421 8.1854 8.75 8.59961 8.75Z"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M8.59961 14.25C9.01382 14.25 9.34961 13.9142 9.34961 13.5C9.34961 13.0858 9.01382 12.75 8.59961 12.75C8.1854 12.75 7.84961 13.0858 7.84961 13.5C7.84961 13.9142 8.1854 14.25 8.59961 14.25Z"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </i>
+    </div>
+    <div class="flex flex-col">
+        <div class="flex flex-row justify-between items-center px-1 py-2 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar1.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Domenica</strong> Driver</p>
+                    <p class="navbar-text">sent a <strong>Message</strong></p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">1h</p>
+                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+
+        <div class="flex flex-row justify-between items-center px-1 py-2 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar2.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Janice</strong> Driver</p>
+                    <p class="navbar-text">has violated <strong>Harsh Braking</strong></p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">1h</p>
+                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+
+        <div class="flex flex-row justify-between items-center px-1 py-2 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar3.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Danial</strong> Driver</p>
+                    <p class="navbar-text">has violated <strong>Sharp Turn</strong></p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">1h</p>
+                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+
+        <div class="flex flex-row justify-between items-center px-1 py-2 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar1.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Domenica</strong> Driver</p>
+                    <p class="navbar-text">sent a <strong>Message</strong></p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">1h</p>
+                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+
+        <div class="flex flex-row justify-between items-center px-1 py-2 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar2.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Janice</strong> Driver</p>
+                    <p class="navbar-text">has violated <strong>Harsh Braking</strong></p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">1h</p>
+                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+
+        <div class="flex flex-row justify-between items-center px-1 py-2 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar3.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Danial</strong> Driver</p>
+                    <p class="navbar-text">has violated <strong>Sharp Turn</strong></p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">1h</p>
+                <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+            </div>
+        </div>
+
+        <button class="mt-4 w-full rounded-lg bg-blue-500 flex items-center justify-center navbar-text text-white font-semibold py-2">
+            See all notifications
+        </button>
+    </div>
 </div>
