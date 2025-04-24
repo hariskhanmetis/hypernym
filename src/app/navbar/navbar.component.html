@@ -108,7 +108,7 @@
 </div>
 
 <!-- Notifications -->
-<div *ngIf="currentMenu === 'notifications'" class="fixed top-16 right-48 z-50 bg-white rounded-xl shadow-lg py-2.5 px-1.5 flex flex-col
+<div *ngIf="currentMenu === 'notifications'" class="fixed top-16 right-48 z-50 bg-white rounded-md shadow-lg py-2.5 px-2 flex flex-col
        transform opacity-0 transition-all duration-500 ease-in-out border w-64 gap-2" [ngClass]="{
   'translate-y-0 opacity-100': modalVisible,
   '-translate-y-full': !modalVisible
@@ -222,6 +222,105 @@
 
         <button class="mt-4 w-full rounded-lg bg-blue-500 flex items-center justify-center navbar-text text-white font-semibold py-2">
             See all notifications
+        </button>
+    </div>
+</div>
+
+<!-- Messages -->
+<div *ngIf="currentMenu === 'messages'" class="fixed top-16 right-52 z-50 bg-white rounded-md shadow-lg py-4 px-3 flex flex-col
+       transform opacity-0 transition-all duration-500 ease-in-out border w-64 gap-2" [ngClass]="{
+  'translate-y-0 opacity-100': modalVisible,
+  '-translate-y-full': !modalVisible
+}">
+
+    <div class="flex flex-row justify-between items-center">
+        <h2 class="text-xs font-bold">Messages</h2>
+        <i>
+            <svg width="12" height="12" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M8.59961 3.25C9.01382 3.25 9.34961 2.91421 9.34961 2.5C9.34961 2.08579 9.01382 1.75 8.59961 1.75C8.1854 1.75 7.84961 2.08579 7.84961 2.5C7.84961 2.91421 8.1854 3.25 8.59961 3.25Z"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M8.59961 8.75C9.01382 8.75 9.34961 8.41421 9.34961 8C9.34961 7.58579 9.01382 7.25 8.59961 7.25C8.1854 7.25 7.84961 7.58579 7.84961 8C7.84961 8.41421 8.1854 8.75 8.59961 8.75Z"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                    d="M8.59961 14.25C9.01382 14.25 9.34961 13.9142 9.34961 13.5C9.34961 13.0858 9.01382 12.75 8.59961 12.75C8.1854 12.75 7.84961 13.0858 7.84961 13.5C7.84961 13.9142 8.1854 14.25 8.59961 14.25Z"
+                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </i>
+    </div>
+    <div class="flex flex-col">
+        <div class="flex flex-row justify-between items-center px-1 py-4 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar4.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Winnifred</strong> Driver</p>
+                    <p class="navbar-text">Message goes here 😊</p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">30m</p>
+            </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+
+        <div class="flex flex-row justify-between items-center px-1 py-4 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar5.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Esther</strong> Driver</p>
+                    <p class="navbar-text">Message goes here 😊</p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">50m</p>
+            </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+
+        <div class="flex flex-row justify-between items-center px-1 py-4 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar2.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Leland</strong> Driver</p>
+                    <p class="navbar-text">Message goes here 😊</p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">1h</p>
+            </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+
+        <div class="flex flex-row justify-between items-center px-1 py-4 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar4.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Winnifred</strong> Driver</p>
+                    <p class="navbar-text">Message goes here 😊</p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">1h</p>
+            </div>
+        </div>
+        <div class="w-full h-px bg-gray-200"></div>
+
+        <div class="flex flex-row justify-between items-center px-1 py-4 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2">
+                <img src="assets/avatars/Avatar2.png" alt="" class="w-8 h-auto rounded-full">
+                <div class="flex flex-col justify-start items-start">
+                    <p class="navbar-text"><strong class="font-bold">Leland</strong> Driver</p>
+                    <p class="navbar-text">Message goes here 😊</p>
+                </div>
+            </div>
+            <div class="status flex flex-row justify-center items-center gap-2 -mt-2">
+                <p class="navbar-text text-gray-500">3h</p>
+            </div>
+        </div>
+
+        <button class="mt-4 w-full rounded-lg bg-transparent border-2 flex items-center justify-center navbar-text font-semibold py-2">
+            View all messages
         </button>
     </div>
 </div>
