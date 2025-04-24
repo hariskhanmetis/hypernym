@@ -324,3 +324,90 @@
         </button>
     </div>
 </div>
+
+<!-- Add New Menu -->
+<div *ngIf="currentMenu === 'add-new'" class="fixed top-16 right-32 z-50 bg-white rounded-xl shadow-lg py-1.5 px-2 flex flex-col
+       transform opacity-0 transition-all duration-500 ease-in-out border w-56 gap-2" [ngClass]="{
+  'translate-y-0 opacity-100': modalVisible,
+  '-translate-y-full': !modalVisible
+}">
+    <div class="flex flex-col">
+        <div class="flex flex-row justify-between items-start px-2 py-2.5 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2.5">
+                <img src="assets/add-new-menu/fleet.png" alt="" class="w-6 h-auto">
+                <div class="flex flex-col justify-start items-start gap-0.5">
+                    <h2 class="navbar-text font-bold">Fleet</h2>
+                    <p class="navbar-text">Create a new fleet</p>
+                </div>
+            </div>
+            <img src="assets/add-new-menu/greaterthan.png" alt="" class="w-1 h-auto mt-1">
+        </div>
+
+        <div class="flex flex-row justify-between items-start px-2 py-2.5 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2.5">
+                <img src="assets/add-new-menu/vehicle.png" alt="" class="w-6 h-auto">
+                <div class="flex flex-col justify-start items-start gap-0.5">
+                    <h2 class="navbar-text font-bold">Vehicle</h2>
+                    <p class="navbar-text">Create a new vehicle</p>
+                </div>
+            </div>
+            <img src="assets/add-new-menu/greaterthan.png" alt="" class="w-1 h-auto mt-1">
+        </div>
+
+        <div class="flex flex-row justify-between items-start px-2 py-2.5 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2.5">
+                <img src="assets/add-new-menu/driver.png" alt="" class="w-6 h-auto">
+                <div class="flex flex-col justify-start items-start gap-0.5">
+                    <h2 class="navbar-text font-bold">Driver</h2>
+                    <p class="navbar-text">Create a new Driver</p>
+                </div>
+            </div>
+            <img src="assets/add-new-menu/greaterthan.png" alt="" class="w-1 h-auto mt-1">
+        </div>
+
+        <div class="flex flex-row justify-between items-start px-2 py-2.5 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2.5">
+                <img src="assets/add-new-menu/geozone.png" alt="" class="w-6 h-auto">
+                <div class="flex flex-col justify-start items-start gap-0.5">
+                    <h2 class="navbar-text font-bold">Geo Zone</h2>
+                    <p class="navbar-text">Create a new Geo Zone</p>
+                </div>
+            </div>
+            <img src="assets/add-new-menu/greaterthan.png" alt="" class="w-1 h-auto mt-1">
+        </div>
+
+        <div class="flex flex-row justify-between items-start px-2 py-2.5 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2.5">
+                <img src="assets/add-new-menu/maintainance.png" alt="" class="w-6 h-auto">
+                <div class="flex flex-col justify-start items-start gap-0.5">
+                    <h2 class="navbar-text font-bold">Maintainance</h2>
+                    <p class="navbar-text">Create a new Maintainance</p>
+                </div>
+            </div>
+            <img src="assets/add-new-menu/greaterthan.png" alt="" class="w-1 h-auto mt-1">
+        </div>
+
+        <div class="flex flex-row justify-between items-start px-2 py-2.5 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2.5">
+                <img src="assets/add-new-menu/job.png" alt="" class="w-6 h-auto">
+                <div class="flex flex-col justify-start items-start gap-0.5">
+                    <h2 class="navbar-text font-bold">Job</h2>
+                    <p class="navbar-text">Create a new job for Drivers</p>
+                </div>
+            </div>
+            <img src="assets/add-new-menu/greaterthan.png" alt="" class="w-1 h-auto mt-1">
+        </div>
+
+        <div class="flex flex-row justify-between items-start px-2 py-2.5 hover:bg-gray-100">
+            <div class="flex flex-row justify-center items-center gap-2.5">
+                <img src="assets/add-new-menu/route.png" alt="" class="w-6 h-auto">
+                <div class="flex flex-col justify-start items-start gap-0.5">
+                    <h2 class="navbar-text font-bold">Route</h2>
+                    <p class="navbar-text">Create a new route for Vehicles</p>
+                </div>
+            </div>
+            <img src="assets/add-new-menu/greaterthan.png" alt="" class="w-1 h-auto mt-1">
+        </div>
+
+    </div>
+</div>
