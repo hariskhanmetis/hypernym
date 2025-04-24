@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* For not showing the scrollbar */
 body::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Edge */
+    display: none; 
 }

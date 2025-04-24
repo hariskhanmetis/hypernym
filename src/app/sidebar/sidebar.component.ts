@@ -27,11 +27,12 @@ export class SidebarComponent implements AfterViewInit {
       }, 500); 
     }
   }
-  
 
   closeModal() {
-    this.isModalOpen = false;
     this.modalVisible = false;
+    setTimeout(() => {
+      this.isModalOpen = false;
+    }, 500);
   }
 
   ngAfterViewInit() {
