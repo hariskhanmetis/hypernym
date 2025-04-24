@@ -38,6 +38,8 @@ import { MeasuresComponent } from './measures/measures.component';
 import { CountriesComponent } from './countries/countries.component';
 import { SettingsAndPrivacyComponent } from './settings-and-privacy/settings-and-privacy.component';
 import { HelpSectionComponent } from './help-section/help-section.component';
+import { InvoiceComponent } from './invoice/invoice.component';
+import { BillingInvoicesTableComponent } from './billing-invoices-table/billing-invoices-table.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +78,9 @@ import { HelpSectionComponent } from './help-section/help-section.component';
     MeasuresComponent,
     CountriesComponent,
     SettingsAndPrivacyComponent,
-    HelpSectionComponent
+    HelpSectionComponent,
+    InvoiceComponent,
+    BillingInvoicesTableComponent
   ],
   imports: [
     BrowserModule,

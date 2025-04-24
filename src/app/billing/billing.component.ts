@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./billing.component.css']
 })
 export class BillingComponent {
-
+ 
 }

@@ -33,6 +33,8 @@ import { SettingsAndPrivacyComponent } from './settings-and-privacy/settings-and
 import { MeasuresComponent } from './measures/measures.component';
 import { CountriesComponent } from './countries/countries.component';
 import { HelpSectionComponent } from './help-section/help-section.component';
+import { BillingInvoicesTableComponent } from './billing-invoices-table/billing-invoices-table.component';
+import { InvoiceComponent } from './invoice/invoice.component';
 
 
 const routes: Routes = [
@@ -74,7 +76,15 @@ const routes: Routes = [
         ],
       },
 
-      { path: 'billing', component: BillingComponent },
+      {
+        path: 'billing',
+        component: BillingComponent, 
+        children: [
+          { path: '', component: BillingInvoicesTableComponent }, 
+          { path: 'invoice', component: InvoiceComponent }, 
+        ],
+      },
+
       { path : 'help', component: HelpSectionComponent },
 
       // Fleetpoint Routes
