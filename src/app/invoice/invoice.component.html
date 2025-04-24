@@ -1,1 +1,107 @@
-<p>invoice works!</p>
+<div class="flex flex-row justify-start items-center gap-2 ml-1">
+    <a href="dashboard/billing/">
+        <i>
+            <svg width="14" height="16" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5 1.49976L2 11.9998L12.5 22.4998" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </i>
+    </a>
+    <h1 class="font-extrabold text-2xl">Invoice</h1>
+</div>
+
+<div class="flex justify-start items-center ml-44 -mt-4 invoice">
+    <div class="flex flex-col gap-2.5">
+        <div class="flex flex-row justify-center items-center gap-2.5">
+            <div class="brand-card flex flex-col justify-center gap-2 px-12 py-10 rounded-3xl shadow-lg h-56">
+                <div class="flex flex-row justify-center items-center gap-8 mr-7">
+                    <img src="assets/hypernym-logo-black.png" alt="" class="w-32 h-10">
+                    <img src="assets/iotility-logo-black.png" alt="" class="w-32 h-10">
+                </div>
+                <p class="text-xs font-semibold">contact&#64;hypernym.co</p>
+            </div>
+            <div class="flex flex-col items-center p-5 gap-6 rounded-3xl shadow-md bg-white h-56">
+                <div class="flex flex-row justify-center items-center gap-3 bg-gray-50 px-3 py-2.5 rounded-2xl">
+                    <img src="assets/table-pfps/Avatar3.png" alt="" class="w-10 h-auto">
+                    <h1 class="font-extrabold text-lg">Haris Khan</h1>
+                </div>
+                <div class="flex flex-col justify-center items-end w-full">
+                    <h5 class="font-bold text-xs">Total Amount:</h5>
+                    <h1 class="font-extrabold text-2xl font-inter">19,570.00</h1>
+                    <h5 class="text-xs text-gray-600 font-extrabold">$ USD</h5>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center items-center gap-2.5">
+            <div class="bg-white rounded-3xl py-4 px-6 shadow-md">
+                <p class="invoice-text">Invoice Number: <strong class="font-inter">N:000027</strong></p>
+            </div>
+            <div class="bg-white rounded-3xl py-4 px-6 shadow-md">
+                <p class="invoice-text mr-28">Issued: <strong class="font-inter">June 26, 2024</strong></p>
+            </div>
+            <div class="bg-white rounded-3xl py-4 px-6 shadow-md">
+                <p class="invoice-text">Due Date: <strong class="font-inter">July 24, 2024</strong></p>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center items-center gap-2.5">
+            <div class="bg-white rounded-3xl py-6 px-6 shadow-md gap-3 flex flex-col justify-center items-start">
+                <h2 class="font-bold text-sm">MTN Logistics</h2>
+                <div class="flex flex-col gap-1">
+                    <p class="font-inter invoice-text font-semibold">(612) 856 - 0989</p>
+                    <p class="invoice-text">contact&#64;mtn.com</p>
+                    <p class="invoice-text">Pablo Alto, San Francisco, CA 92102, United States of America</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl py-6 px-6 shadow-md gap-3 flex flex-col justify-center items-start">
+                <h2 class="font-bold text-sm">HyperNym</h2>
+                <div class="flex flex-col gap-1">
+                    <p class="font-inter invoice-text font-semibold">(684) 879 - 0102</p>
+                    <p class="invoice-text">Pablo Alto, San Francisco, CA 94109, United States of America</p>
+                    <p class="invoice-text font-inter">12345 6789 US0001</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center items-center w-full bg-white p-4 rounded-3xl shadow-md">
+            <table class="w-full">
+                <thead>
+                    <tr>
+                        <th class="font-bold invoice-text text-sm w-6/12 text-left text-gray-700 p-2">Use Case</th>
+                        <th class="font-bold invoice-text text-sm w-6/12 text-left text-gray-700 p-2">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="invoice-text font-bold text-left px-2 py-4">AssetRack</td>
+                        <td class="invoice-text font-inter text-blue-500 font-bold text-left px-2 py-4">$ 2,750.00</td>
+                    </tr>
+                    <tr>
+                        <td class="invoice-text font-bold text-left px-2 py-4">WasteRack</td>
+                        <td class="invoice-text font-inter text-blue-500 font-bold text-left px-2 py-4">$ 1,110.00</td>
+                    </tr>
+                    <tr>
+                        <td class="invoice-text font-bold text-left px-2 py-4">SustainEx</td>
+                        <td class="invoice-text font-inter text-blue-500 font-bold text-left px-2 py-4">$ 1,460.00</td>
+                    </tr>
+                    <tr>
+                        <td class="invoice-text font-bold text-left px-2 py-4">TwinScape</td>
+                        <td class="invoice-text font-inter text-blue-500 font-bold text-left px-2 py-4">$ 2,280.00</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div
+            class="bg-white rounded-full px-2 py-4 shadow-lg flex flex-row justify-center items-center gap-3 w-5/12 self-end">
+            <h2 class="invoice-text text-gray-600">TOTAL AMOUNT:</h2>
+            <h1 class="font-bold text-lg font-inter text-blue-500">$ 19,570.00</h1>
+        </div>
+        <div class="bg-transparent flex flex-col justify-center items-start gap-1 w-5/12 ml-6">
+            <h2 class="text-xs font-bold">Terms & Conditions</h2>
+            <p class="invoice-text text-gray-400">
+                Fees and payment terms will be established in the contract or agreement prior to the commencement of the
+                project. An initial deposit will be required before any design work begins. We reserve the right to
+                suspend or halt work in the event of non-payment.
+            </p>
+        </div>
+    </div>
+</div>

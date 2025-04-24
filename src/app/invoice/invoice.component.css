@@ -1,0 +1,15 @@
+.brand-card {
+    background: url('../../assets/backgrounds/gradient.png');
+    background-size: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 
+                0 -4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.invoice-text {
+    font-size: 0.64rem;
+}
+
+.invoice {
+    max-width: 40rem;
+    width: 100%;
+}
