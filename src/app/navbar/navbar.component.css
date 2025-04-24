@@ -30,3 +30,7 @@
 .iotility {
     width: 4.5rem;
 }
+
+.addnew-btn:hover {
+    background-color: #000000;
+}

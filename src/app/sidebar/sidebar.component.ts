@@ -15,15 +15,19 @@ export class SidebarComponent implements AfterViewInit {
   modalVisible = false; 
 
   openModal() {
-    this.isModalOpen = !this.isModalOpen;
-    if (this.isModalOpen) {
+    if (!this.isModalOpen) {
+      this.isModalOpen = true;
       setTimeout(() => {
-        this.modalVisible = true; 
+        this.modalVisible = true;
       }, 1); 
     } else {
-      this.modalVisible = false; 
+      this.modalVisible = false;
+      setTimeout(() => {
+        this.isModalOpen = false;
+      }, 500); 
     }
   }
+  
 
   closeModal() {
     this.isModalOpen = false;
