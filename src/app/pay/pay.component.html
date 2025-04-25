@@ -11,9 +11,9 @@
 </div>
 
 <div class="flex justify-center items-center p-12 w-full">
-    <div class="bg-white rounded-xl flex flex-row justify-center items-center p-6 w-10/12 shadow-md gap-5">
+    <div class="bg-white rounded-xl flex flex-row justify-center p-6 w-10/12 shadow-md gap-5">
         <div class="flex justify-start items-start w-6/12">
-            <div class="w-full pl-32 pt-10 pr-10 flex flex-col gap-2">
+            <div class="w-full pl-32 pt-10 pr-10 flex flex-col justify-start gap-2">
                 <h1 class="text-xl font-bold text-gray-700 font-inter">$99.00</h1>
                 <div class="flex flex-row justify-between items-center mt-3 mb-2">
                     <p class="payment-text font-extrabold text-gray-500">ABC Box of Widgets</p>
@@ -36,7 +36,7 @@
         <div class="flex justify-start items-center w-6/12">
             <div class="flex flex-col justify-center items-center ml-10 w-7/12 h-full gap-5">
                 <button
-                    class="bg-[#1A1A1A] text-gray-200 text-xs w-full py-1.5 px-2 gap-1 flex flex-row rounded-sm justify-center items-center">
+                    class="bg-[#1A1A1A] text-gray-200 payment-heading w-full py-1.5 px-2 gap-1 flex flex-row rounded-sm justify-center items-center">
                     <i>
                         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_1568)">
@@ -60,7 +60,7 @@
                             </defs>
                         </svg>
                     </i>
-                    <span>Pay</span>
+                    <span class="mt-px">Pay</span>
                 </button>
 
                 <div class="flex flex-row justify-center items-center w-full">
@@ -91,10 +91,11 @@
                         <a href="" class="input-text underline text-gray-400 font-bold mt-1">Enter address manually</a>
                     </div>
                     <h4 class="payment-heading font-bold text-gray-500 mt-2">Payment Method</h4>
-                    <div class="flex flex-row gap-1 justify-center items-center w-full">
-                        <button class="flex flex-col gap-1 payment-text text-gray-500 rounded-md border font-semibold w-4/12 p-1.5">
+                    <div class="flex flex-row gap-1 justify-center items-center w-full h-10">
+                        <button
+                            class="flex flex-col gap-1 btn-text text-gray-500 rounded-md border font-semibold w-4/12 p-1.5 h-full">
                             <i>
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                <svg width="16" height="13" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M2 12C2 8.46252 2 6.69377 3.0528 5.5129C3.22119 5.32403 3.40678 5.14935 3.60746 4.99087C4.86213 4 6.74142 4 10.5 4H13.5C17.2586 4 19.1379 4 20.3925 4.99087C20.5932 5.14935 20.7788 5.32403 20.9472 5.5129C22 6.69377 22 8.46252 22 12C22 15.5375 22 17.3062 20.9472 18.4871C20.7788 18.676 20.5932 18.8506 20.3925 19.0091C19.1379 20 17.2586 20 13.5 20H10.5C6.74142 20 4.86213 20 3.60746 19.0091C3.40678 18.8506 3.22119 18.676 3.0528 18.4871C2 17.3062 2 15.5375 2 12Z"
@@ -109,15 +110,67 @@
                             </i>
                             <span>Card</span>
                         </button>
-                        <button class="flex flex-col gap-1 payment-text text-gray-500 rounded-md border font-semibold w-4/12 p-1.5">
+                        <button
+                            class="flex flex-col gap-1 btn-text text-gray-500 rounded-md border font-semibold w-4/12 p-1.5 h-full">
                             <img src="assets/icons/klarna.png" alt="" class="w-8 h-4">
                             <span>Klarna</span>
                         </button>
-                        <button class="flex flex-col gap-1 payment-text text-gray-500 rounded-md border font-semibold w-4/12 p-1.5">
+                        <button
+                            class="flex flex-col gap-1 btn-text text-gray-500 rounded-md border font-semibold w-4/12 p-1.5 h-full">
                             <img src="assets/icons/giropay.png" alt="" class="w-8 h-4">
                             <span>GiroPay</span>
                         </button>
-                        
+                        <button
+                            class="flex flex-col gap-1 btn-text text-gray-500 rounded-md border font-semibold p-1.5 h-full">
+                            <i>
+                                <svg width="10" height="4" viewBox="0 0 16 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 3.12531C14.6213 3.12531 15.125 2.62163 15.125 2.00031C15.125 1.37898 14.6213 0.875305 14 0.875305C13.3787 0.875305 12.875 1.37898 12.875 2.00031C12.875 2.62163 13.3787 3.12531 14 3.12531Z"
+                                        fill="#17181A" />
+                                    <path
+                                        d="M8 3.12531C8.62132 3.12531 9.125 2.62163 9.125 2.00031C9.125 1.37898 8.62132 0.875305 8 0.875305C7.37868 0.875305 6.875 1.37898 6.875 2.00031C6.875 2.62163 7.37868 3.12531 8 3.12531Z"
+                                        fill="#17181A" />
+                                    <path
+                                        d="M2 3.12531C2.62132 3.12531 3.125 2.62163 3.125 2.00031C3.125 1.37898 2.62132 0.875305 2 0.875305C1.37868 0.875305 0.875 1.37898 0.875 2.00031C0.875 2.62163 1.37868 3.12531 2 3.12531Z"
+                                        fill="#17181A" />
+                                    <path
+                                        d="M14 3.12531C14.6213 3.12531 15.125 2.62163 15.125 2.00031C15.125 1.37898 14.6213 0.875305 14 0.875305C13.3787 0.875305 12.875 1.37898 12.875 2.00031C12.875 2.62163 13.3787 3.12531 14 3.12531Z"
+                                        stroke="#17181A" stroke-width="1.5" />
+                                    <path
+                                        d="M8 3.12531C8.62132 3.12531 9.125 2.62163 9.125 2.00031C9.125 1.37898 8.62132 0.875305 8 0.875305C7.37868 0.875305 6.875 1.37898 6.875 2.00031C6.875 2.62163 7.37868 3.12531 8 3.12531Z"
+                                        stroke="#17181A" stroke-width="1.5" />
+                                    <path
+                                        d="M2 3.12531C2.62132 3.12531 3.125 2.62163 3.125 2.00031C3.125 1.37898 2.62132 0.875305 2 0.875305C1.37868 0.875305 0.875 1.37898 0.875 2.00031C0.875 2.62163 1.37868 3.12531 2 3.12531Z"
+                                        stroke="#17181A" stroke-width="1.5" />
+                                </svg>
+                            </i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col items-start w-full mt-2">
+                        <label for="address" class="payment-text text-gray-400 font-bold mb-0.5">Card
+                            Information</label>
+                        <div class="flex flex-row justify-between gap-5 w-full rounded-t-md border py-1.5 px-2">
+                            <input type="tel" name="card" id="card"
+                                class=" input-text font-inter placeholder:font-bold w-full h-full"
+                                placeholder="1234 1234 1234 1234">
+                            <div class="flex flex-row justify-center items-center h-full gap-px">
+                                <img src="assets/icons/visa.png" alt="" class="w-5 h-2">
+                                <img src="assets/icons/mastercard.png" alt="" class="w-4 h-2">
+                                <img src="assets/icons/paypal.png" alt="" class="w-2 h-2">
+                            </div>
+                        </div>
+                        <div class="flex flex-row w-full">
+                            <input type="name" name="name" id="name"
+                                class="border-b border-l border-r rounded-bl-md w-full input-text py-1.5 px-2 placeholder:font-bold placeholder:text-gray-400"
+                                placeholder="MM / YY">
+                            <input type="name" name="name" id="name"
+                                class="border-b border-r rounded-br-md input-text w-full py-1.5 px-2 placeholder:font-bold placeholder:text-gray-400"
+                                placeholder="CVC">
+                        </div>
+                        <div class="flex flex-row justify-center items-center gap-1">
+                            <input type="checkbox" id="checkbox" class="w-2.5 h-2.5 mt-px"> <label for="checkbox" class="input-text text-gray-400 font-bold mt-1">Billing address is same as shipping</label>
+                        </div>
                     </div>
                 </div>
             </div>
