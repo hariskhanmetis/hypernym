@@ -40,6 +40,7 @@ import { SettingsAndPrivacyComponent } from './settings-and-privacy/settings-and
 import { HelpSectionComponent } from './help-section/help-section.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { BillingInvoicesTableComponent } from './billing-invoices-table/billing-invoices-table.component';
+import { PayComponent } from './pay/pay.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { BillingInvoicesTableComponent } from './billing-invoices-table/billing-
     SettingsAndPrivacyComponent,
     HelpSectionComponent,
     InvoiceComponent,
-    BillingInvoicesTableComponent
+    BillingInvoicesTableComponent,
+    PayComponent
   ],
   imports: [
     BrowserModule,

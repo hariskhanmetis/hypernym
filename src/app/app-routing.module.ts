@@ -35,6 +35,7 @@ import { CountriesComponent } from './countries/countries.component';
 import { HelpSectionComponent } from './help-section/help-section.component';
 import { BillingInvoicesTableComponent } from './billing-invoices-table/billing-invoices-table.component';
 import { InvoiceComponent } from './invoice/invoice.component';
+import { PayComponent } from './pay/pay.component';
 
 
 const routes: Routes = [
@@ -82,6 +83,7 @@ const routes: Routes = [
         children: [
           { path: '', component: BillingInvoicesTableComponent }, 
           { path: 'invoice', component: InvoiceComponent }, 
+          { path: 'pay', component: PayComponent },
         ],
       },
 

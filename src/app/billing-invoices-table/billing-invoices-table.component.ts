@@ -12,4 +12,8 @@ export class BillingInvoicesTableComponent {
   navigateToInvoice() {
     this.router.navigate(['/dashboard/billing/invoice']);
   }
+
+  navigateToPay() {
+    this.router.navigate(['/dashboard/billing/pay']);
+  }
 }
