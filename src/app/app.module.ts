@@ -41,6 +41,8 @@ import { HelpSectionComponent } from './help-section/help-section.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { BillingInvoicesTableComponent } from './billing-invoices-table/billing-invoices-table.component';
 import { PayComponent } from './pay/pay.component';
+import { HelpQuestionsComponent } from './help-questions/help-questions.component';
+import { AnswerQuestionsHeaderComponent } from './answer-questions-header/answer-questions-header.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +84,9 @@ import { PayComponent } from './pay/pay.component';
     HelpSectionComponent,
     InvoiceComponent,
     BillingInvoicesTableComponent,
-    PayComponent
+    PayComponent,
+    HelpQuestionsComponent,
+    AnswerQuestionsHeaderComponent
   ],
   imports: [
     BrowserModule,

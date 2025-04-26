@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-help-section',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./help-section.component.css']
 })
 export class HelpSectionComponent {
+  constructor (private router: Router) {}
 
+  navigateToFaq() {
+    this.router.navigate(['/dashboard/help/faq']);
+  }
 }

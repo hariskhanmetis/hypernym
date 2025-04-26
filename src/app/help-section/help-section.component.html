@@ -1,24 +1,11 @@
 <div class="flex justify-start items-center ml-32">
     <div class="flex flex-col justify-center items-center gap-5 p-2 w-9/12">
-        <div class="ask-a-q flex flex-col justify-center items-center gap-0.5 p-16 rounded-sm w-full">
-            <h1 class="font-bold text-[#7367F0] text-xl">Let's answer some questions</h1>
-            <p class="heading-p text-gray-500">or choose a category to quickly find the help you need</p>
-    
-            <div class="flex flex-row justify-start items-center mt-2 py-1.5 px-2 gap-2 bg-white rounded border border-gray-200 w-7/12">
-                <i>
-                    <svg width="8" height="8" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.7026 12.7032L16.4995 16.5001M14.625 8.0625C14.625 11.6869 11.6869 14.625 8.0625 14.625C4.43813 14.625 1.5 11.6869 1.5 8.0625C1.5 4.43813 4.43813 1.5 8.0625 1.5C11.6869 1.5 14.625 4.43813 14.625 8.0625Z"
-                            stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </i>
-                <input type="text" placeholder="Ask a question"
-                    class="search-text placeholder:text-gray-300 w-full">
-            </div>
+        <div class="w-full">
+            <app-answer-questions-header></app-answer-questions-header>
         </div>
 
         <div class="cards grid grid-cols-3 gap-4">
-            <div class="flex flex-col gap-3 justify-center items-center bg-white rounded cursor-pointer">
+            <div class="flex flex-col gap-3 justify-center items-center bg-white rounded cursor-pointer" (click)="navigateToFaq()">
                 <div class="flex items-center justify-center w-full bg-gray-50 py-3 h-full">
                     <img src="assets/card-icons/fleetpoint.svg" alt="" class="w-36 h-auto">
                 </div>
