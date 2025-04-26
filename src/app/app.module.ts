@@ -43,6 +43,7 @@ import { BillingInvoicesTableComponent } from './billing-invoices-table/billing-
 import { PayComponent } from './pay/pay.component';
 import { HelpQuestionsComponent } from './help-questions/help-questions.component';
 import { AnswerQuestionsHeaderComponent } from './answer-questions-header/answer-questions-header.component';
+import { HelpTopicsComponent } from './help-topics/help-topics.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { AnswerQuestionsHeaderComponent } from './answer-questions-header/answer
     BillingInvoicesTableComponent,
     PayComponent,
     HelpQuestionsComponent,
-    AnswerQuestionsHeaderComponent
+    AnswerQuestionsHeaderComponent,
+    HelpTopicsComponent
   ],
   imports: [
     BrowserModule,

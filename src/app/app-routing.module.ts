@@ -37,6 +37,7 @@ import { BillingInvoicesTableComponent } from './billing-invoices-table/billing-
 import { InvoiceComponent } from './invoice/invoice.component';
 import { PayComponent } from './pay/pay.component';
 import { HelpQuestionsComponent } from './help-questions/help-questions.component';
+import { HelpTopicsComponent } from './help-topics/help-topics.component';
 
 
 const routes: Routes = [
@@ -78,6 +79,7 @@ const routes: Routes = [
         ],
       },
 
+      // Billing Routes
       {
         path: 'billing',
         component: BillingComponent,
@@ -89,8 +91,14 @@ const routes: Routes = [
       },
 
       // Help Section Routes
-      { path: 'help', component: HelpSectionComponent },
-      { path: 'help/faq', component: HelpQuestionsComponent },
+      {
+        path: 'help',
+        component: HelpSectionComponent,
+        children: [
+          { path: '', component: HelpTopicsComponent },
+          { path: 'faq', component: HelpQuestionsComponent },
+        ]
+      },
 
       // Fleetpoint Routes
       {

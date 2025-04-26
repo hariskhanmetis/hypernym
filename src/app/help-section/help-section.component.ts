@@ -7,9 +7,5 @@ import { Router } from '@angular/router';
   styleUrls: ['./help-section.component.css']
 })
 export class HelpSectionComponent {
-  constructor (private router: Router) {}
-
-  navigateToFaq() {
-    this.router.navigate(['/dashboard/help/faq']);
-  }
+ 
 }
