@@ -44,6 +44,7 @@ import { PayComponent } from './pay/pay.component';
 import { HelpQuestionsComponent } from './help-questions/help-questions.component';
 import { AnswerQuestionsHeaderComponent } from './answer-questions-header/answer-questions-header.component';
 import { HelpTopicsComponent } from './help-topics/help-topics.component';
+import { ArticleDetailsComponent } from './article-details/article-details.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +89,8 @@ import { HelpTopicsComponent } from './help-topics/help-topics.component';
     PayComponent,
     HelpQuestionsComponent,
     AnswerQuestionsHeaderComponent,
-    HelpTopicsComponent
+    HelpTopicsComponent,
+    ArticleDetailsComponent
   ],
   imports: [
     BrowserModule,

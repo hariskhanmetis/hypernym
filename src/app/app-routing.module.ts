@@ -38,7 +38,7 @@ import { InvoiceComponent } from './invoice/invoice.component';
 import { PayComponent } from './pay/pay.component';
 import { HelpQuestionsComponent } from './help-questions/help-questions.component';
 import { HelpTopicsComponent } from './help-topics/help-topics.component';
-
+import { ArticleDetailsComponent } from './article-details/article-details.component';
 
 const routes: Routes = [
   // Authentication Routes
@@ -97,6 +97,7 @@ const routes: Routes = [
         children: [
           { path: '', component: HelpTopicsComponent },
           { path: 'faq', component: HelpQuestionsComponent },
+          { path: 'faq/article', component: ArticleDetailsComponent },
         ]
       },
 
