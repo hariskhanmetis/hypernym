@@ -1,0 +1,41 @@
+<!-- User Roles Page -->
+<div class="flex flex-col gap-2 justify-center items-start">
+
+    <div class="flex flex-row justify-between items-center gap-2 w-full">
+        <h1 class="text-xs font-bold">User Roles</h1>
+        <div class="flex flex-row justify-center items-center gap-2.5">
+            <button class="flex flex-row justify-center items-center navbar-text gap-2" (click)="navigateToBrowseAll()">
+                <span class="mt-px">Browse All</span>
+                <i>
+                    <svg width="5" height="11" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.938241 1.22364L6.69824 7L0.938241 12.7764" stroke="#4A4A4A" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </i>
+            </button>
+            <button (click)="navigateToCreateNewRole()"
+                class="bg-[#1A1A1A] rounded-md navbar-text px-1.5 py-1 flex flex-row justify-center items-center gap-1 text-gray-200">
+                <i>
+                    <svg width="11" height="10" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.59928 4.8335V10.1668M4.93262 7.50016H10.266M14.266 7.50016C14.266 11.1821 11.2812 14.1668 7.59928 14.1668C3.91739 14.1668 0.932617 11.1821 0.932617 7.50016C0.932617 3.81826 3.91739 0.833496 7.59928 0.833496C11.2812 0.833496 14.266 3.81826 14.266 7.50016Z"
+                            stroke="#F5F5F5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </i>
+                <span>New Role</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- User Role Cards -->
+    <div class="w-full">
+        <app-users-roles-cards></app-users-roles-cards>
+    </div>
+
+
+    <!-- User List Table -->
+    <div class="w-full">
+        <app-users-list-table></app-users-list-table>
+    </div>
+
+</div>

@@ -39,6 +39,9 @@ import { PayComponent } from './pay/pay.component';
 import { HelpQuestionsComponent } from './help-questions/help-questions.component';
 import { HelpTopicsComponent } from './help-topics/help-topics.component';
 import { ArticleDetailsComponent } from './article-details/article-details.component';
+import { AllComponent } from './users/all/all.component';
+import { OverviewComponent } from './users/overview/overview.component';
+import { CreateNewRoleComponent } from './users/create-new-role/create-new-role.component';
 
 const routes: Routes = [
   // Authentication Routes
@@ -63,7 +66,17 @@ const routes: Routes = [
       { path: 'welcome', component: WelcomeComponent },
       { path: 'buy', component: BuyComponent },
       { path: 'home', component: HomeComponent },
-      { path: 'users', component: UsersComponent },
+
+      // Users Routes
+      {
+        path: 'users',
+        component: UsersComponent,
+        children: [
+          { path: '', component: OverviewComponent },
+          { path: 'all', component: AllComponent },
+          { path: 'new-role', component: CreateNewRoleComponent },
+        ],
+      },
 
       // Settings Routes
       {

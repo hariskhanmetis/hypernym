@@ -45,6 +45,11 @@ import { HelpQuestionsComponent } from './help-questions/help-questions.componen
 import { AnswerQuestionsHeaderComponent } from './answer-questions-header/answer-questions-header.component';
 import { HelpTopicsComponent } from './help-topics/help-topics.component';
 import { ArticleDetailsComponent } from './article-details/article-details.component';
+import { AllComponent } from './users/all/all.component';
+import { UsersRolesCardsComponent } from './users/users-roles-cards/users-roles-cards.component';
+import { UsersListTableComponent } from './users/users-list-table/users-list-table.component';
+import { OverviewComponent } from './users/overview/overview.component';
+import { CreateNewRoleComponent } from './users/create-new-role/create-new-role.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +95,12 @@ import { ArticleDetailsComponent } from './article-details/article-details.compo
     HelpQuestionsComponent,
     AnswerQuestionsHeaderComponent,
     HelpTopicsComponent,
-    ArticleDetailsComponent
+    ArticleDetailsComponent,
+    AllComponent,
+    UsersRolesCardsComponent,
+    UsersListTableComponent,
+    OverviewComponent,
+    CreateNewRoleComponent
   ],
   imports: [
     BrowserModule,
