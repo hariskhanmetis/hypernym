@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
 import { AuthenticationComponent } from './authentication/authentication.component';
 import { LoginComponent } from './login/login.component';
@@ -104,9 +106,12 @@ import { CreateNewRoleComponent } from './users/create-new-role/create-new-role.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GoogleMapsModule
   ],
-  providers: [],
+  providers: [
+    { provide: 'googleMapsApiKey', useValue: environment.googleMapsApiKey }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
