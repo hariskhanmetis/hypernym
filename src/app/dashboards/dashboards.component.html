@@ -1,15 +1,30 @@
+
+
 <h5 class="text-xs font-bold">Dashboards</h5>
 
-<ng-container *ngIf="apiLoaded">
-    <google-map
-    *ngIf="apiLoaded"
-    class="fixed top-0 left-0 w-screen h-screen -z-20"
-    [center]="center"
-    [zoom]="zoom"
-    [height]="'100vh'"
-    [width]="'100vw'"
-    [options]="mapOptions">
-  </google-map>
-  
-  <div class="fixed top-0 left-0 w-screen h-[370px] bg-gradient-to-b from-white to-transparent opacity-95 -z-10"></div>
-</ng-container>
+<div class="flex flex-col justify-start items-start gap-2 mt-2">
+  <div class="flex flex-row justify-center items-center rounded-2xl bg-white px-1 py-1.5 shadow-md">
+    <a routerLink="/dashboard/fleetpoint/dashboards/realtime-tracking" routerLinkActive="active" class="text-xs text-gray-900 py-1 px-1.5 mr-3 rounded-2xl">
+      Realtime Tracking
+    </a>
+    <a routerLink="/dashboard/fleetpoint/dashboards/overview" routerLinkActive="active" class="text-xs text-gray-900 py-1 px-1.5 mr-3 rounded-2xl">
+      Overview
+    </a>
+    <a routerLink="/dashboard/fleetpoint/dashboards/vehicles" routerLinkActive="active" class="text-xs text-gray-900 py-1 px-1.5 mr-3 rounded-2xl">
+      Vehicles
+    </a>
+    <a routerLink="/dashboard/fleetpoint/dashboards/drivers" routerLinkActive="active" class="text-xs text-gray-900 py-1 px-1.5 mr-3 rounded-2xl">
+      Drivers
+    </a>
+    <a routerLink="/dashboard/fleetpoint/dashboards/jobs" routerLinkActive="active" class="text-xs text-gray-900 py-1 px-1.5 mr-3 rounded-2xl">
+      Jobs
+    </a>
+    <a routerLink="/dashboard/fleetpoint/dashboards/maintainance" routerLinkActive="active" class="text-xs text-gray-900 py-1 px-1.5 mr-3 rounded-2xl">
+      Maintainance
+    </a>
+  </div>
+
+  <div class="w-full">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -52,6 +52,12 @@ import { UsersRolesCardsComponent } from './users/users-roles-cards/users-roles-
 import { UsersListTableComponent } from './users/users-list-table/users-list-table.component';
 import { OverviewComponent } from './users/overview/overview.component';
 import { CreateNewRoleComponent } from './users/create-new-role/create-new-role.component';
+import { DashboardsRealtimeTrackingComponent } from './dashboards/dashboards-realtime-tracking/dashboards-realtime-tracking.component';
+import { DashboardsOverviewComponent } from './dashboards/dashboards-overview/dashboards-overview.component';
+import { DashboardsVehiclesComponent } from './dashboards/dashboards-vehicles/dashboards-vehicles.component';
+import { DashboardsDriversComponent } from './dashboards/dashboards-drivers/dashboards-drivers.component';
+import { DashboardsJobsComponent } from './dashboards/dashboards-jobs/dashboards-jobs.component';
+import { DashboardsMaintainanceComponent } from './dashboards/dashboards-maintainance/dashboards-maintainance.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +108,13 @@ import { CreateNewRoleComponent } from './users/create-new-role/create-new-role.
     UsersRolesCardsComponent,
     UsersListTableComponent,
     OverviewComponent,
-    CreateNewRoleComponent
+    CreateNewRoleComponent,
+    DashboardsRealtimeTrackingComponent,
+    DashboardsOverviewComponent,
+    DashboardsVehiclesComponent,
+    DashboardsDriversComponent,
+    DashboardsJobsComponent,
+    DashboardsMaintainanceComponent
   ],
   imports: [
     BrowserModule,

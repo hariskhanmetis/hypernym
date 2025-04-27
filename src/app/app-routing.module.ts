@@ -42,6 +42,12 @@ import { ArticleDetailsComponent } from './article-details/article-details.compo
 import { AllComponent } from './users/all/all.component';
 import { OverviewComponent } from './users/overview/overview.component';
 import { CreateNewRoleComponent } from './users/create-new-role/create-new-role.component';
+import { DashboardsRealtimeTrackingComponent } from './dashboards/dashboards-realtime-tracking/dashboards-realtime-tracking.component';
+import { DashboardsOverviewComponent } from './dashboards/dashboards-overview/dashboards-overview.component';
+import { DashboardsVehiclesComponent } from './dashboards/dashboards-vehicles/dashboards-vehicles.component';
+import { DashboardsDriversComponent } from './dashboards/dashboards-drivers/dashboards-drivers.component';
+import { DashboardsJobsComponent } from './dashboards/dashboards-jobs/dashboards-jobs.component';
+import { DashboardsMaintainanceComponent } from './dashboards/dashboards-maintainance/dashboards-maintainance.component';
 
 const routes: Routes = [
   // Authentication Routes
@@ -121,7 +127,18 @@ const routes: Routes = [
         children: [
           { path: '', component: FleetpointSidebarComponent },
           { path: 'thankyou', component: ThankyouComponent },
-          { path: 'dashboards', component: DashboardsComponent },
+          { path: 'dashboards',
+            component: DashboardsComponent,
+            children: [
+              { path: '', redirectTo: 'realtime-tracking', pathMatch: 'full' },
+              { path: 'realtime-tracking', component: DashboardsRealtimeTrackingComponent},
+              { path: 'overview', component: DashboardsOverviewComponent},
+              { path: 'vehicles', component: DashboardsVehiclesComponent},
+              { path: 'drivers', component: DashboardsDriversComponent},
+              { path: 'jobs', component: DashboardsJobsComponent},
+              { path: 'maintainance', component: DashboardsMaintainanceComponent},
+            ]
+           },
           { path: 'dashcams', component: DashcamsComponent },
           { path: 'fleets', component: FleetsComponent },
           { path: 'drivers', component: DriversComponent },
