@@ -2,3 +2,27 @@
     display: none !important;
   }
 
+.btn-text {
+  font-size: 0.5rem;
+}
+
+.online-vehicles {
+  max-width: 19rem;
+  top: 11%;
+}
+
+.input-text {
+  font-size: 0.55rem;
+}
+
+.card-text {
+  font-size: 0.6rem;
+}
+
+.cards-section {
+  padding-top: 12.5rem;
+}
+
+.cards-section::-webkit-scrollbar {
+  display: none; 
+}
