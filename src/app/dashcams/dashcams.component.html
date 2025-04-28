@@ -1,4 +1,4 @@
-<div class="flex flex-col gap-4 justify-center items-start w-full">
+<div class="flex flex-col gap-3 justify-center items-start w-full">
     <h5 class="text-xs font-bold">Dashcams</h5>
 
     <div class="grid grid-cols-3 gap-5 w-full">
@@ -31,5 +31,116 @@
                 <h2 class="font-bold font-inter">345</h2>
             </div>
         </div>
+    </div>
+
+    <div class="px-5 py-3 bg-white rounded-lg w-full mt-2">
+        <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-row justify-center items-center gap-1">
+                <div class="p-2 rounded-full bg-gray-50">
+                    <img src="assets/add-new-menu/fleet.png" alt="" class="w-6 h-auto">
+                </div>
+                <div class="flex flex-col justify-center items-start gap-0.5 card-text">
+                    <h5 class="font-bold">Online Dashcam Vehicles</h5>
+                    <p class="font-inter text-gray-500">35 Vehicles</p>
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-center items-center gap-2">
+                <div
+                    class="flex flex-row justify-between items-center border-2 input-placeholder rounded-lg px-2 py-1.5 gap-6">
+                    <input type="text" name="search" id="search"
+                        class="placeholder:text-gray-300 w-full focus:outline-none"
+                        placeholder="Search by vehicle reg#">
+                    <img src="assets/icons/search.png" alt="" class="w-2.5 h-auto">
+                </div>
+                <select name="fleet-type" id="fleet-type"
+                    class="bg-gray-50 rounded-lg px-2 py-1.5 focus:outline-none input-text font-semibold">
+                    <option value="all" selected>ALL FLEETS</option>
+                    <option value="fleet1">FLEET1</option>
+                    <option value="fleet2">FLEET2</option>
+                </select>
+            </div>
+        </div>
+
+        <table class="w-full border-collapse text-left mt-4">
+            <thead>
+                <tr class="card-text text-gray-500 bg-gray-50">
+                    <th class="px-4 py-1 rounded-l-md w-96">Vehicle</th>
+                    <th class="p-1">Online Dashcams</th>
+                    <th class="p-1 rounded-r-md">Fleet</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="py-2.5 px-6 flex flex-row justify-start items-center gap-2">
+                        <img src="assets/icons/truck.png" alt="" class="w-9 h-auto">
+                        <div class="flex flex-col justify-center items-start gap-0.5 card-text">
+                            <h5 class="font-bold">Abc - 133</h5>
+                            <p class="font-inter text-gray-500">Toyota Mazda - 2024</p>
+                        </div>
+                    </td>
+                    <td class="px-4 py-2.5 card-text font-bold">4 out of 5</td>
+                    <td class="px-1 py-2.5 card-text font-semibold">Fleet 1</td>
+                </tr>
+                <tr>
+                    <td class="py-2.5 px-6 flex flex-row justify-start items-center gap-2">
+                        <img src="assets/icons/truck.png" alt="" class="w-9 h-auto">
+                        <div class="flex flex-col justify-center items-start gap-0.5 card-text">
+                            <h5 class="font-bold">Abc - 133</h5>
+                            <p class="font-inter text-gray-500">Toyota Mazda - 2024</p>
+                        </div>
+                    </td>
+                    <td class="px-4 py-2.5 card-text font-bold">4 out of 5</td>
+                    <td class="px-1 py-2.5 card-text font-semibold">Fleet 1</td>
+                </tr>
+                <tr>
+                    <td class="py-2.5 px-6 flex flex-row justify-start items-center gap-2">
+                        <img src="assets/icons/truck.png" alt="" class="w-9 h-auto">
+                        <div class="flex flex-col justify-center items-start gap-0.5 card-text">
+                            <h5 class="font-bold">Abc - 133</h5>
+                            <p class="font-inter text-gray-500">Toyota Mazda - 2024</p>
+                        </div>
+                    </td>
+                    <td class="px-4 py-2.5 card-text font-bold">4 out of 5</td>
+                    <td class="px-1 py-2.5 card-text font-semibold">Fleet 1</td>
+                </tr>
+                <tr>
+                    <td class="py-2.5 px-6 flex flex-row justify-start items-center gap-2">
+                        <img src="assets/icons/truck.png" alt="" class="w-9 h-auto">
+                        <div class="flex flex-col justify-center items-start gap-0.5 card-text">
+                            <h5 class="font-bold">Abc - 133</h5>
+                            <p class="font-inter text-gray-500">Toyota Mazda - 2024</p>
+                        </div>
+                    </td>
+                    <td class="px-4 py-2.5 card-text font-bold">4 out of 5</td>
+                    <td class="px-1 py-2.5 card-text font-semibold">Fleet 1</td>
+                </tr>
+                <tr>
+                    <td class="py-2.5 px-6 flex flex-row justify-start items-center gap-2">
+                        <img src="assets/icons/truck.png" alt="" class="w-9 h-auto">
+                        <div class="flex flex-col justify-center items-start gap-0.5 card-text">
+                            <h5 class="font-bold">Abc - 133</h5>
+                            <p class="font-inter text-gray-500">Toyota Mazda - 2024</p>
+                        </div>
+                    </td>
+                    <td class="px-4 py-2.5 card-text font-bold">4 out of 5</td>
+                    <td class="px-1 py-2.5 card-text font-semibold">Fleet 1</td>
+                </tr>
+                <tr>
+                    <td class="py-2.5 px-6 flex flex-row justify-start items-center gap-2">
+                        <img src="assets/icons/truck.png" alt="" class="w-9 h-auto">
+                        <div class="flex flex-col justify-center items-start gap-0.5 card-text">
+                            <h5 class="font-bold">Abc - 133</h5>
+                            <p class="font-inter text-gray-500">Toyota Mazda - 2024</p>
+                        </div>
+                    </td>
+                    <td class="px-4 py-2.5 card-text font-bold">4 out of 5</td>
+                    <td class="px-1 py-2.5 card-text font-semibold">Fleet 1</td>
+                </tr>
+                
+                
+            </tbody>
+        </table>
     </div>
 </div>
