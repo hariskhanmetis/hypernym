@@ -1,1 +1,27 @@
-<p>jobs works!</p>
+<!-- Jobs -->
+
+<div class="flex flex-col justify-center items-center w-full gap-4 p-0.5">
+    <div class="flex flex-row justify-between items-center w-full">
+        <div class="flex flex-row justify-center items-center gap-2">
+            <h1 class="text-2xl font-extrabold">Jobs</h1>
+            <div class="border rounded-md flex flex-row justify-center items-center bg-white">
+                <button (click)="navigateToDashboard()"
+                    class="border-r py-1.5 px-2.5 btn-text text-gray-700 flex flex-row justify-center items-center gap-1">
+                    <img src="assets/icons/icon_interface.png" alt="" class="w-3 h-auto">
+                    <span>Dashboard</span>
+                </button>
+                <button (click)="navigateToJobs()"
+                    class="border-r py-1.5 pr-2.5 btn-text text-gray-700 flex flex-row justify-center items-center gap-1">
+                    <img src="assets/icons/arrow.png" alt="" class="w-3 h-auto">
+                    <span>Jobs</span>
+                </button>
+            </div>
+        </div>
+
+        <button
+            class="flex flex-row justify-center items-center gap-1 bg-[#1A1A1A] border-0 btn2-text text-white px-2 py-1.5 rounded-md">
+            <img src="assets/icons/add-icon-2-white.png" alt="" class="w-2.5 h-auto">
+            <span class="mt-px">New Job</span>
+        </button>
+    </div>
+</div>

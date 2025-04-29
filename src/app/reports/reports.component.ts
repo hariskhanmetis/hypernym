@@ -7,13 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./reports.component.css']
 })
 export class ReportsComponent {
-constructor (private router: Router) {}
-  
-    navigateToDashboard () {
-      this.router.navigate(['/dashboard/fleetpoint/dashboards/']);
-    }
-  
-    navigateToReports() {
-      this.router.navigate(['/dashboard/fleetpoint/reports/']);
-    }
+  constructor(private router: Router) { }
+
+  navigateToDashboard() {
+    this.router.navigate(['/dashboard/fleetpoint/dashboards/']);
+  }
+
+  navigateToReports() {
+    this.router.navigate(['/dashboard/fleetpoint/reports/']);
+  }
 }
