@@ -1,10 +1,10 @@
 <div class="grid grid-cols-12">
 
-    <div class="settingsSiderbar col-span-2 py-2.5 px-1.5 bg-white rounded-2xl h-screen">
+    <div class="settingsSiderbar fixed col-span-2 py-2.5 px-1.5 bg-white rounded-2xl h-screen" style="width: calc(16.6667% - 1.4rem);">
        <app-settings-sidebar></app-settings-sidebar>
     </div>
 
-    <div class="settingsContent col-span-10 p-6 rounded-2xl ml-4 bg-white h-full">
+    <div class="settingsContent col-span-10 p-6 rounded-2xl ml-4 bg-white h-full" style="margin-left: calc(16.6667% + 3rem); width: calc(100% - 1.1frem);">
         <router-outlet></router-outlet>
     </div>
 

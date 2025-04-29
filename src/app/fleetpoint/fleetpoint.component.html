@@ -1,10 +1,10 @@
 <div class="grid grid-cols-12">
 
-    <div class="fleetpointSiderbar col-span-2 py-2.5 px-1.5 bg-white rounded-2xl h-full">
+    <div class="fleetpointSiderbar fixed col-span-2 py-2.5 px-1.5 bg-white rounded-2xl h-full" style="width: calc(16.6667% - 1.4rem);">
         <app-fleetpoint-sidebar></app-fleetpoint-sidebar>
     </div>
 
-    <div class="fleetpointContent col-span-10 rounded-lg ml-4">
+    <div class="fleetpointContent col-span-10 rounded-lg" style="margin-left: calc(16.6667% + 3rem); width: calc(100% - 0.95rem);">
         <router-outlet></router-outlet>
     </div>
 </div>
