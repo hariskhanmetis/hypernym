@@ -25,3 +25,7 @@
 .heading-text {
     font-size: 0.66rem;
 }
+
+.cards-section::-webkit-scrollbar {
+    display: none; 
+  }

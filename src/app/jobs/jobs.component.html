@@ -18,10 +18,584 @@
             </div>
         </div>
 
-        <button
-            class="flex flex-row justify-center items-center gap-1 bg-[#1A1A1A] border-0 btn2-text text-white px-2 py-1.5 rounded-md">
-            <img src="assets/icons/add-icon-2-white.png" alt="" class="w-2.5 h-auto">
-            <span class="mt-px">New Job</span>
-        </button>
+        <div class="flex flex-row justify-center items-center gap-2">
+            <div class="flex flex-row justify-between items-center border input-text rounded-md px-2 py-1.5">
+                <input type="text" name="search" id="search"
+                    class="placeholder:text-gray-300 bg-transparent w-full focus:outline-none" placeholder="Search Job">
+                <img src="assets/icons/search.png" alt="" class="w-2.5 h-auto">
+            </div>
+            <button
+                class="flex flex-row justify-center items-center gap-1 bg-[#1A1A1A] border-0 btn2-text text-white px-2 py-1.5 rounded-md">
+                <img src="assets/icons/add-icon-2-white.png" alt="" class="w-2.5 h-auto">
+                <span class="mt-px">New Job</span>
+            </button>
+        </div>
     </div>
-</div>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-2 w-full">
+        <div
+            class="pending-approval bg-white px-3 py-1.5 rounded-lg h-full flex flex-col justify-start items-center gap-2">
+            <div
+                class="flex flex-row justify-between items-center px-1 py-1 bg-[#705AFF33] bg-opacity-20 w-full rounded-md">
+                <h5 class="text-xs font-bold ml-px">To Do</h5>
+                <button class="bg-white p-1.5 rounded-md border border-gray-300">
+                    <img src="assets/icons/add-icon-2-black.png" alt="" class="w-3 h-auto">
+                </button>
+            </div>
+
+            <div class="cards-section flex flex-col gap-2 max-h-[100vh] h-screen overflow-y-auto scrollbar-hide w-full">
+
+                <div
+                    class="job-card border border-gray-300 p-2 rounded-xl flex flex-col gap-2 justify-center items-center w-full">
+                    <div class="flex flex-row justify-start items-center w-full pr-1">
+                        <h5 class="heading-text font-bold">Job 1</h5>
+                    </div>
+
+                    <div class="flex flex-row w-full justify-center items-start gap-7">
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Drivers</p>
+                                <div class="flex flex-row justify-start items-center ml-4">
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar1.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar2.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar3.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar4.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar5.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Type</p>
+                                <h5 class="font-inter btn-text font-bold">Scheduled</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Due</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2025</h5>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Created By</p>
+                                <h5 class="font-inter btn-text font-bold">Haris Khan</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start mt-1.5">
+                                <p class="input-text text-gray-600">Start</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2024</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Task Progress</p>
+                                <h5 class="font-inter btn-text font-bold">50/100</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="in-progress bg-white px-3 py-1.5 rounded-lg h-full flex flex-col justify-start items-center gap-2">
+            <div
+                class="flex flex-row justify-between items-center px-1 py-[8.8px] bg-[#FFD07133] bg-opacity-20 w-full rounded-md">
+                <h5 class="text-xs font-bold ml-px">In Progress</h5>
+            </div>
+
+            <div class="cards-section flex flex-col gap-2 max-h-[100vh] h-screen overflow-y-auto scrollbar-hide w-full">
+
+                <div
+                    class="job-card border border-gray-300 p-2 rounded-xl flex flex-col gap-2 justify-center items-center w-full">
+                    <div class="flex flex-row justify-start items-center w-full pr-1">
+                        <h5 class="heading-text font-bold">Job 1</h5>
+                    </div>
+
+                    <div class="flex flex-row w-full justify-center items-start gap-7">
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Drivers</p>
+                                <div class="flex flex-row justify-start items-center ml-4">
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar1.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar2.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar3.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar4.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar5.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Type</p>
+                                <h5 class="font-inter btn-text font-bold">Scheduled</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Due</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2025</h5>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Created By</p>
+                                <h5 class="font-inter btn-text font-bold">Haris Khan</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start mt-1.5">
+                                <p class="input-text text-gray-600">Start</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2024</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Task Progress</p>
+                                <h5 class="font-inter btn-text font-bold">50/100</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center gap-0.5 w-full mb-1">
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FFD071]"></div>
+                        <div class="h-1.5 rounded-full w-3/12 bg-[#705AFF]"></div>
+                        <div class="h-1.5 rounded-full w-5/12 bg-[#00FF90]"></div>
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FF4247]"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="job-card border border-gray-300 p-2 rounded-xl flex flex-col gap-2 justify-center items-center w-full">
+                    <div class="flex flex-row justify-start items-center w-full pr-1">
+                        <h5 class="heading-text font-bold">Job 1</h5>
+                    </div>
+
+                    <div class="flex flex-row w-full justify-center items-start gap-7">
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Drivers</p>
+                                <div class="flex flex-row justify-start items-center ml-4">
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar1.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar2.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar3.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar4.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar5.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Type</p>
+                                <h5 class="font-inter btn-text font-bold">Scheduled</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Due</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2025</h5>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Created By</p>
+                                <h5 class="font-inter btn-text font-bold">Haris Khan</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start mt-1.5">
+                                <p class="input-text text-gray-600">Start</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2024</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Task Progress</p>
+                                <h5 class="font-inter btn-text font-bold">50/100</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center gap-0.5 w-full mb-1">
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FFD071]"></div>
+                        <div class="h-1.5 rounded-full w-3/12 bg-[#705AFF]"></div>
+                        <div class="h-1.5 rounded-full w-5/12 bg-[#00FF90]"></div>
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FF4247]"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="job-card border border-gray-300 p-2 rounded-xl flex flex-col gap-2 justify-center items-center w-full">
+                    <div class="flex flex-row justify-start items-center w-full pr-1">
+                        <h5 class="heading-text font-bold">Job 1</h5>
+                    </div>
+
+                    <div class="flex flex-row w-full justify-center items-start gap-7">
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Drivers</p>
+                                <div class="flex flex-row justify-start items-center ml-4">
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar1.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar2.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar3.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar4.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar5.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Type</p>
+                                <h5 class="font-inter btn-text font-bold">Scheduled</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Due</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2025</h5>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Created By</p>
+                                <h5 class="font-inter btn-text font-bold">Haris Khan</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start mt-1.5">
+                                <p class="input-text text-gray-600">Start</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2024</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Task Progress</p>
+                                <h5 class="font-inter btn-text font-bold">50/100</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center gap-0.5 w-full mb-1">
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FFD071]"></div>
+                        <div class="h-1.5 rounded-full w-3/12 bg-[#705AFF]"></div>
+                        <div class="h-1.5 rounded-full w-5/12 bg-[#00FF90]"></div>
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FF4247]"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="job-card border border-gray-300 p-2 rounded-xl flex flex-col gap-2 justify-center items-center w-full">
+                    <div class="flex flex-row justify-start items-center w-full pr-1">
+                        <h5 class="heading-text font-bold">Job 1</h5>
+                    </div>
+
+                    <div class="flex flex-row w-full justify-center items-start gap-7">
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Drivers</p>
+                                <div class="flex flex-row justify-start items-center ml-4">
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar1.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar2.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar3.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar4.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar5.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Type</p>
+                                <h5 class="font-inter btn-text font-bold">Scheduled</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Due</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2025</h5>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Created By</p>
+                                <h5 class="font-inter btn-text font-bold">Haris Khan</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start mt-1.5">
+                                <p class="input-text text-gray-600">Start</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2024</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Task Progress</p>
+                                <h5 class="font-inter btn-text font-bold">50/100</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center gap-0.5 w-full mb-1">
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FFD071]"></div>
+                        <div class="h-1.5 rounded-full w-3/12 bg-[#705AFF]"></div>
+                        <div class="h-1.5 rounded-full w-5/12 bg-[#00FF90]"></div>
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FF4247]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="in-progress bg-white px-3 py-1.5 rounded-lg h-full flex flex-col justify-start items-center gap-2">
+            <div
+                class="flex flex-row justify-between items-center px-1 py-[8.8px] bg-[#00FF9033] bg-opacity-20 w-full rounded-md">
+                <h5 class="text-xs font-bold ml-px">Completed</h5>
+            </div>
+
+            <div class="cards-section flex flex-col gap-2 max-h-[100vh] h-screen overflow-y-auto scrollbar-hide w-full">
+
+                <div
+                    class="job-card border border-gray-300 p-2 rounded-xl flex flex-col gap-2 justify-center items-center w-full">
+                    <div class="flex flex-row justify-start items-center w-full pr-1">
+                        <h5 class="heading-text font-bold">Job 1</h5>
+                    </div>
+
+                    <div class="flex flex-row w-full justify-center items-start gap-7">
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Drivers</p>
+                                <div class="flex flex-row justify-start items-center ml-4">
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar1.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar2.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar3.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar4.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar5.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Type</p>
+                                <h5 class="font-inter btn-text font-bold">Scheduled</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Due</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2025</h5>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Created By</p>
+                                <h5 class="font-inter btn-text font-bold">Haris Khan</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start mt-1.5">
+                                <p class="input-text text-gray-600">Start</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2024</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Task Progress</p>
+                                <h5 class="font-inter btn-text font-bold">50/100</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center gap-0.5 w-full mb-1">
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FFD071]"></div>
+                        <div class="h-1.5 rounded-full w-3/12 bg-[#705AFF]"></div>
+                        <div class="h-1.5 rounded-full w-5/12 bg-[#00FF90]"></div>
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FF4247]"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="job-card border border-gray-300 p-2 rounded-xl flex flex-col gap-2 justify-center items-center w-full">
+                    <div class="flex flex-row justify-start items-center w-full pr-1">
+                        <h5 class="heading-text font-bold">Job 1</h5>
+                    </div>
+
+                    <div class="flex flex-row w-full justify-center items-start gap-7">
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Drivers</p>
+                                <div class="flex flex-row justify-start items-center ml-4">
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar1.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar2.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar3.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar4.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar5.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Type</p>
+                                <h5 class="font-inter btn-text font-bold">Scheduled</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Due</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2025</h5>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Created By</p>
+                                <h5 class="font-inter btn-text font-bold">Haris Khan</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start mt-1.5">
+                                <p class="input-text text-gray-600">Start</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2024</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Task Progress</p>
+                                <h5 class="font-inter btn-text font-bold">50/100</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center gap-0.5 w-full mb-1">
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FFD071]"></div>
+                        <div class="h-1.5 rounded-full w-3/12 bg-[#705AFF]"></div>
+                        <div class="h-1.5 rounded-full w-5/12 bg-[#00FF90]"></div>
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FF4247]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="in-progress bg-white px-3 py-1.5 rounded-lg h-full flex flex-col justify-start items-center gap-2">
+            <div
+                class="flex flex-row justify-between items-center px-1 py-[8.8px] bg-[#FF424733] bg-opacity-20 w-full rounded-md">
+                <h5 class="text-xs font-bold ml-px">Aborted</h5>
+            </div>
+
+            <div class="cards-section flex flex-col gap-2 max-h-[100vh] h-screen overflow-y-auto scrollbar-hide w-full">
+
+                <div
+                    class="job-card border border-gray-300 p-2 rounded-xl flex flex-col gap-2 justify-center items-center w-full">
+                    <div class="flex flex-row justify-start items-center w-full pr-1">
+                        <h5 class="heading-text font-bold">Job 1</h5>
+                    </div>
+
+                    <div class="flex flex-row w-full justify-center items-start gap-7">
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Drivers</p>
+                                <div class="flex flex-row justify-start items-center ml-4">
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar1.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar2.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar3.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar4.png">
+                                    </div>
+                                    <div
+                                        class="flex relative w-5 h-5 justify-center items-center mr-2 -ml-4 rounded-full border-r-2 border-white">
+                                        <img class="rounded-full" alt="A" src="assets/avatars/Avatar5.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Type</p>
+                                <h5 class="font-inter btn-text font-bold">Scheduled</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Due</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2025</h5>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-3 w-1/2">
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Created By</p>
+                                <h5 class="font-inter btn-text font-bold">Haris Khan</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start mt-1.5">
+                                <p class="input-text text-gray-600">Start</p>
+                                <h5 class="font-inter btn-text font-bold">28/12/2024</h5>
+                            </div>
+                            <div class="flex flex-col justify-center items-start">
+                                <p class="input-text text-gray-600">Task Progress</p>
+                                <h5 class="font-inter btn-text font-bold">50/100</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row justify-center items-center gap-0.5 w-full mb-1">
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FFD071]"></div>
+                        <div class="h-1.5 rounded-full w-3/12 bg-[#705AFF]"></div>
+                        <div class="h-1.5 rounded-full w-5/12 bg-[#00FF90]"></div>
+                        <div class="h-1.5 rounded-full w-2/12 bg-[#FF4247]"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
