@@ -1,5 +1,5 @@
 .btn-text {
-    font-size: 0.6rem;
+    font-size: 0.57rem;
 }
 
 .btn2-text {
@@ -14,14 +14,10 @@
     font-size: 0.52rem;
 }
 
-.card-text-2 {
-    font-size: 0.65rem;
-}
-
-.btn3-text {
-    font-size: 0.65rem;
-}
-
 .heading-text {
-    font-size: 0.66rem;
+    font-size: 0.65rem;
 }
+
+.cards-section::-webkit-scrollbar {
+    display: none; 
+  }
