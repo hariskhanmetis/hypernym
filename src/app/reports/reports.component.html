@@ -1,1 +1,284 @@
-<p>reports works!</p>
+<div class="flex flex-col justify-center items-center w-full gap-4 p-0.5">
+    <div class="flex flex-row justify-between items-center w-full">
+        <div class="flex flex-row justify-center items-center gap-2">
+            <h1 class="text-2xl font-extrabold">Reports</h1>
+            <div class="border rounded-md flex flex-row justify-center items-center bg-white">
+                <button (click)="navigateToDashboard()"
+                    class="border-r py-1.5 px-2.5 btn-text text-gray-700 flex flex-row justify-center items-center gap-1">
+                    <img src="assets/icons/icon_interface.png" alt="" class="w-3 h-auto">
+                    <span>Dashboard</span>
+                </button>
+                <button (click)="navigateToReports()"
+                    class="border-r py-1.5 pr-2.5 btn-text text-gray-700 flex flex-row justify-center items-center gap-1">
+                    <img src="assets/icons/arrow.png" alt="" class="w-3 h-auto">
+                    <span>Reports</span>
+                </button>
+            </div>
+        </div>
+
+        <button
+            class="flex flex-row justify-center items-center gap-1 bg-[#1A1A1A] border-0 btn2-text text-white px-2 py-1.5 rounded-md">
+            <img src="assets/icons/add-icon-2-white.png" alt="" class="w-2.5 h-auto">
+            <span class="mt-px">New Report</span>
+        </button>
+    </div>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 w-full">
+        <div class="reports-card bg-white rounded-lg px-3.5 py-4 flex flex-col items-center justify-center w-full gap-1">
+            <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row justify-center items-center">
+                    <h5 class="heading-text font-bold">Fuel Consumption Report</h5>
+                    <img src="assets/icons/arrow.png" alt="" class="w-4 h-auto">
+                </div>
+                <div class="bg-[#F1C40F] rounded-2xl px-2 py-0.5 card-text-2 text-gray-50">System</div>
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+                <p class="card-text-2">Created By: <strong>Haris Khan</strong></p>
+            </div>
+           
+            <div class="flex flex-row justify-center items-center gap-1 w-full mt-2">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2024</p>
+                    </div>
+                </div>
+                <img src="assets/icons/arrow-gray.png" alt="" class="w-4 h-auto">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reports-card bg-white rounded-lg px-3.5 py-4 flex flex-col items-center justify-center w-full gap-1">
+            <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row justify-center items-center">
+                    <h5 class="heading-text font-bold">Driver Violation Report</h5>
+                    <img src="assets/icons/arrow.png" alt="" class="w-4 h-auto">
+                </div>
+                <div class="bg-[#F1C40F] rounded-2xl px-2 py-0.5 card-text-2 text-gray-50">System</div>
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+                <p class="card-text-2">Created By: <strong>Haris Khan</strong></p>
+            </div>
+           
+            <div class="flex flex-row justify-center items-center gap-1 w-full mt-2">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2024</p>
+                    </div>
+                </div>
+                <img src="assets/icons/arrow-gray.png" alt="" class="w-4 h-auto">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reports-card bg-white rounded-lg px-3.5 py-4 flex flex-col items-center justify-center w-full gap-1">
+            <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row justify-center items-center">
+                    <h5 class="heading-text font-bold">CO2 Emission Report</h5>
+                    <img src="assets/icons/arrow.png" alt="" class="w-4 h-auto">
+                </div>
+                <div class="bg-[#525DF7] rounded-2xl px-2 py-0.5 card-text-2 text-gray-50">Custom</div>
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+                <p class="card-text-2">Created By: <strong>Haris Khan</strong></p>
+            </div>
+           
+            <div class="flex flex-row justify-center items-center gap-1 w-full mt-2">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2024</p>
+                    </div>
+                </div>
+                <img src="assets/icons/arrow-gray.png" alt="" class="w-4 h-auto">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reports-card bg-white rounded-lg px-3.5 py-4 flex flex-col items-center justify-center w-full gap-1">
+            <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row justify-center items-center">
+                    <h5 class="heading-text font-bold">Sustainability Report</h5>
+                    <img src="assets/icons/arrow.png" alt="" class="w-4 h-auto">
+                </div>
+                <div class="bg-[#525DF7] rounded-2xl px-2 py-0.5 card-text-2 text-gray-50">Custom</div>
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+                <p class="card-text-2">Created By: <strong>Haris Khan</strong></p>
+            </div>
+           
+            <div class="flex flex-row justify-center items-center gap-1 w-full mt-2">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2024</p>
+                    </div>
+                </div>
+                <img src="assets/icons/arrow-gray.png" alt="" class="w-4 h-auto">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reports-card bg-white rounded-lg px-3.5 py-4 flex flex-col items-center justify-center w-full gap-1">
+            <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row justify-center items-center">
+                    <h5 class="heading-text font-bold">Active Devices Report</h5>
+                    <img src="assets/icons/arrow.png" alt="" class="w-4 h-auto">
+                </div>
+                <div class="bg-[#F1C40F] rounded-2xl px-2 py-0.5 card-text-2 text-gray-50">System</div>
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+                <p class="card-text-2">Created By: <strong>Haris Khan</strong></p>
+            </div>
+           
+            <div class="flex flex-row justify-center items-center gap-1 w-full mt-2">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2024</p>
+                    </div>
+                </div>
+                <img src="assets/icons/arrow-gray.png" alt="" class="w-4 h-auto">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reports-card bg-white rounded-lg px-3.5 py-4 flex flex-col items-center justify-center w-full gap-1">
+            <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row justify-center items-center">
+                    <h5 class="heading-text font-bold">Dashcam Activity Report</h5>
+                    <img src="assets/icons/arrow.png" alt="" class="w-4 h-auto">
+                </div>
+                <div class="bg-[#F1C40F] rounded-2xl px-2 py-0.5 card-text-2 text-gray-50">System</div>
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+                <p class="card-text-2">Created By: <strong>Haris Khan</strong></p>
+            </div>
+           
+            <div class="flex flex-row justify-center items-center gap-1 w-full mt-2">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2024</p>
+                    </div>
+                </div>
+                <img src="assets/icons/arrow-gray.png" alt="" class="w-4 h-auto">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reports-card bg-white rounded-lg px-3.5 py-4 flex flex-col items-center justify-center w-full gap-1">
+            <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row justify-center items-center">
+                    <h5 class="heading-text font-bold">Driver App Users</h5>
+                    <img src="assets/icons/arrow.png" alt="" class="w-4 h-auto">
+                </div>
+                <div class="bg-[#F1C40F] rounded-2xl px-2 py-0.5 card-text-2 text-gray-50">System</div>
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+                <p class="card-text-2">Created By: <strong>Haris Khan</strong></p>
+            </div>
+           
+            <div class="flex flex-row justify-center items-center gap-1 w-full mt-2">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2024</p>
+                    </div>
+                </div>
+                <img src="assets/icons/arrow-gray.png" alt="" class="w-4 h-auto">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reports-card bg-white rounded-lg px-3.5 py-4 flex flex-col items-center justify-center w-full gap-1">
+            <div class="flex flex-row justify-between items-center w-full">
+                <div class="flex flex-row justify-center items-center">
+                    <h5 class="heading-text font-bold">Maintenance Report</h5>
+                    <img src="assets/icons/arrow.png" alt="" class="w-4 h-auto">
+                </div>
+                <div class="bg-[#525DF7] rounded-2xl px-2 py-0.5 card-text-2 text-gray-50">Custom</div>
+            </div>
+
+            <div class="flex justify-start items-center w-full">
+                <p class="card-text-2">Created By: <strong>Haris Khan</strong></p>
+            </div>
+           
+            <div class="flex flex-row justify-center items-center gap-1 w-full mt-2">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2024</p>
+                    </div>
+                </div>
+                <img src="assets/icons/arrow-gray.png" alt="" class="w-4 h-auto">
+                <div class="flex flex-row justify-start items-center gap-2 border bg-transparent rounded-md px-2 py-1 w-full">
+                    <img src="assets/icons/clock.png" alt="" class="w-4 h-auto">
+                    <div class="font-inter flex flex-col justify-center items-center gap-0.5">
+                        <p class="heading-text font-bold">02:00 PM</p>
+                        <p class="card-text-2 text-gray-500">29/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
