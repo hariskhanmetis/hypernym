@@ -58,6 +58,7 @@ import { DashboardsVehiclesComponent } from './dashboards/dashboards-vehicles/da
 import { DashboardsDriversComponent } from './dashboards/dashboards-drivers/dashboards-drivers.component';
 import { DashboardsJobsComponent } from './dashboards/dashboards-jobs/dashboards-jobs.component';
 import { DashboardsMaintainanceComponent } from './dashboards/dashboards-maintainance/dashboards-maintainance.component';
+import { NewUserComponent } from './users/new-user/new-user.component';
 
 @NgModule({
   declarations: [
@@ -114,7 +115,8 @@ import { DashboardsMaintainanceComponent } from './dashboards/dashboards-maintai
     DashboardsVehiclesComponent,
     DashboardsDriversComponent,
     DashboardsJobsComponent,
-    DashboardsMaintainanceComponent
+    DashboardsMaintainanceComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
