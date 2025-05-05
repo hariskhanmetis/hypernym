@@ -48,6 +48,8 @@ import { DashboardsVehiclesComponent } from './dashboards/dashboards-vehicles/da
 import { DashboardsDriversComponent } from './dashboards/dashboards-drivers/dashboards-drivers.component';
 import { DashboardsJobsComponent } from './dashboards/dashboards-jobs/dashboards-jobs.component';
 import { DashboardsMaintainanceComponent } from './dashboards/dashboards-maintainance/dashboards-maintainance.component';
+import { ManageShiftsComponent } from './drivers/manage-shifts/manage-shifts.component';
+import { DriversOverviewComponent } from './drivers/drivers-overview/drivers-overview.component';
 
 const routes: Routes = [
   // Authentication Routes
@@ -134,14 +136,24 @@ const routes: Routes = [
               { path: 'realtime-tracking', component: DashboardsRealtimeTrackingComponent},
               { path: 'overview', component: DashboardsOverviewComponent},
               { path: 'vehicles', component: DashboardsVehiclesComponent},
-              { path: 'drivers', component: DashboardsDriversComponent},
+              { 
+                path: 'drivers', component: DashboardsDriversComponent,
+                
+              },
               { path: 'jobs', component: DashboardsJobsComponent},
               { path: 'maintainance', component: DashboardsMaintainanceComponent},
             ]
            },
           { path: 'dashcams', component: DashcamsComponent },
           { path: 'fleets', component: FleetsComponent },
-          { path: 'drivers', component: DriversComponent },
+          { 
+            path: 'drivers', 
+            component: DriversComponent,
+            children: [
+              {path:'', component: DriversOverviewComponent},
+              {path:'manage-shifts', component: ManageShiftsComponent},
+            ],
+          },
           { path: 'vehicles', component: VehiclesComponent },
           { path: 'routes', component: RoutesComponent },
           { path: 'jobs', component: JobsComponent },

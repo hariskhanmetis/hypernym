@@ -59,6 +59,8 @@ import { DashboardsDriversComponent } from './dashboards/dashboards-drivers/dash
 import { DashboardsJobsComponent } from './dashboards/dashboards-jobs/dashboards-jobs.component';
 import { DashboardsMaintainanceComponent } from './dashboards/dashboards-maintainance/dashboards-maintainance.component';
 import { NewUserComponent } from './users/new-user/new-user.component';
+import { ManageShiftsComponent } from './drivers/manage-shifts/manage-shifts.component';
+import { DriversOverviewComponent } from './drivers/drivers-overview/drivers-overview.component';
 
 @NgModule({
   declarations: [
@@ -116,7 +118,9 @@ import { NewUserComponent } from './users/new-user/new-user.component';
     DashboardsDriversComponent,
     DashboardsJobsComponent,
     DashboardsMaintainanceComponent,
-    NewUserComponent
+    NewUserComponent,
+    ManageShiftsComponent,
+    DriversOverviewComponent
   ],
   imports: [
     BrowserModule,
