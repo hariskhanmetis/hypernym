@@ -6,8 +6,8 @@ import { Router } from '@angular/router';
   templateUrl: './fuel-tracking.component.html',
   styleUrls: ['./fuel-tracking.component.css']
 })
-export class FuelTrackingComponent {
-constructor (private router: Router) {}
+export class FuelTrackingComponent implements AfterViewInit {
+  constructor(private router: Router) { }
 
   @ViewChild('modal') modal!: ElementRef;
 
@@ -24,12 +24,12 @@ constructor (private router: Router) {}
   ngAfterViewInit() {
     this.isModalOpen = false;
   }
-  
-    navigateToDashboard () {
-      this.router.navigate(['/dashboard/fleetpoint/dashboards/']);
-    }
-  
-    navigateToFuelTracking() {
-      this.router.navigate(['/dashboard/fleetpoint/fuel-tracking/']);
-    }
+
+  navigateToDashboard() {
+    this.router.navigate(['/dashboard/fleetpoint/dashboards/']);
+  }
+
+  navigateToFuelTracking() {
+    this.router.navigate(['/dashboard/fleetpoint/fuel-tracking/']);
+  }
 }
