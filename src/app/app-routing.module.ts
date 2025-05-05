@@ -50,6 +50,9 @@ import { DashboardsJobsComponent } from './dashboards/dashboards-jobs/dashboards
 import { DashboardsMaintainanceComponent } from './dashboards/dashboards-maintainance/dashboards-maintainance.component';
 import { ManageShiftsComponent } from './drivers/manage-shifts/manage-shifts.component';
 import { DriversOverviewComponent } from './drivers/drivers-overview/drivers-overview.component';
+import { RoutesOverviewComponent } from './routes/routes-overview/routes-overview.component';
+import { VehiclesOverviewComponent } from './vehicles/vehicles-overview/vehicles-overview.component';
+import { ManageGeoZonesComponent } from './vehicles/manage-geo-zones/manage-geo-zones.component';
 
 const routes: Routes = [
   // Authentication Routes
@@ -129,33 +132,47 @@ const routes: Routes = [
         children: [
           { path: '', component: FleetpointSidebarComponent },
           { path: 'thankyou', component: ThankyouComponent },
-          { path: 'dashboards',
+          {
+            path: 'dashboards',
             component: DashboardsComponent,
             children: [
               { path: '', redirectTo: 'realtime-tracking', pathMatch: 'full' },
-              { path: 'realtime-tracking', component: DashboardsRealtimeTrackingComponent},
-              { path: 'overview', component: DashboardsOverviewComponent},
-              { path: 'vehicles', component: DashboardsVehiclesComponent},
-              { 
+              { path: 'realtime-tracking', component: DashboardsRealtimeTrackingComponent },
+              { path: 'overview', component: DashboardsOverviewComponent },
+              { path: 'vehicles', component: DashboardsVehiclesComponent },
+              {
                 path: 'drivers', component: DashboardsDriversComponent,
-                
+
               },
-              { path: 'jobs', component: DashboardsJobsComponent},
-              { path: 'maintainance', component: DashboardsMaintainanceComponent},
+              { path: 'jobs', component: DashboardsJobsComponent },
+              { path: 'maintainance', component: DashboardsMaintainanceComponent },
             ]
-           },
+          },
           { path: 'dashcams', component: DashcamsComponent },
           { path: 'fleets', component: FleetsComponent },
-          { 
-            path: 'drivers', 
+          {
+            path: 'drivers',
             component: DriversComponent,
             children: [
-              {path:'', component: DriversOverviewComponent},
-              {path:'manage-shifts', component: ManageShiftsComponent},
+              { path: '', component: DriversOverviewComponent },
+              { path: 'manage-shifts', component: ManageShiftsComponent },
             ],
           },
-          { path: 'vehicles', component: VehiclesComponent },
-          { path: 'routes', component: RoutesComponent },
+          {
+            path: 'vehicles',
+            component: VehiclesComponent,
+            children: [
+              { path: '', component: VehiclesOverviewComponent },
+              { path: 'manage-geo-zones', component: ManageGeoZonesComponent },
+            ],
+          },
+          {
+            path: 'routes',
+            component: RoutesComponent,
+            children: [
+              { path: '', component: RoutesOverviewComponent },
+            ],
+          },
           { path: 'jobs', component: JobsComponent },
           { path: 'maintainance', component: MaintainanceComponent },
           { path: 'reports', component: ReportsComponent },

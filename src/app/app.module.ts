@@ -61,6 +61,9 @@ import { DashboardsMaintainanceComponent } from './dashboards/dashboards-maintai
 import { NewUserComponent } from './users/new-user/new-user.component';
 import { ManageShiftsComponent } from './drivers/manage-shifts/manage-shifts.component';
 import { DriversOverviewComponent } from './drivers/drivers-overview/drivers-overview.component';
+import { RoutesOverviewComponent } from './routes/routes-overview/routes-overview.component';
+import { ManageGeoZonesComponent } from './vehicles/manage-geo-zones/manage-geo-zones.component';
+import { VehiclesOverviewComponent } from './vehicles/vehicles-overview/vehicles-overview.component';
 
 @NgModule({
   declarations: [
@@ -120,7 +123,10 @@ import { DriversOverviewComponent } from './drivers/drivers-overview/drivers-ove
     DashboardsMaintainanceComponent,
     NewUserComponent,
     ManageShiftsComponent,
-    DriversOverviewComponent
+    DriversOverviewComponent,
+    RoutesOverviewComponent,
+    ManageGeoZonesComponent,
+    VehiclesOverviewComponent
   ],
   imports: [
     BrowserModule,
