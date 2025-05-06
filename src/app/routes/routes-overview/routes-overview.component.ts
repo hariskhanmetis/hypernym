@@ -16,4 +16,8 @@ export class RoutesOverviewComponent {
   navigateToRoutes() {
     this.router.navigate(['/dashboard/fleetpoint/routes/']);
   }
+
+  navigateToRouteDetails() {
+    this.router.navigate(['/dashboard/fleetpoint/routes/route-details/']);
+  }
 }

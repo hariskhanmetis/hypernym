@@ -64,6 +64,7 @@ import { DriversOverviewComponent } from './drivers/drivers-overview/drivers-ove
 import { RoutesOverviewComponent } from './routes/routes-overview/routes-overview.component';
 import { ManageGeoZonesComponent } from './vehicles/manage-geo-zones/manage-geo-zones.component';
 import { VehiclesOverviewComponent } from './vehicles/vehicles-overview/vehicles-overview.component';
+import { RouteDetailsComponent } from './routes/route-details/route-details.component';
 
 @NgModule({
   declarations: [
@@ -126,7 +127,8 @@ import { VehiclesOverviewComponent } from './vehicles/vehicles-overview/vehicles
     DriversOverviewComponent,
     RoutesOverviewComponent,
     ManageGeoZonesComponent,
-    VehiclesOverviewComponent
+    VehiclesOverviewComponent,
+    RouteDetailsComponent
   ],
   imports: [
     BrowserModule,

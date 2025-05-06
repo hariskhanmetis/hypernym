@@ -53,6 +53,7 @@ import { DriversOverviewComponent } from './drivers/drivers-overview/drivers-ove
 import { RoutesOverviewComponent } from './routes/routes-overview/routes-overview.component';
 import { VehiclesOverviewComponent } from './vehicles/vehicles-overview/vehicles-overview.component';
 import { ManageGeoZonesComponent } from './vehicles/manage-geo-zones/manage-geo-zones.component';
+import { RouteDetailsComponent } from './routes/route-details/route-details.component';
 
 const routes: Routes = [
   // Authentication Routes
@@ -171,6 +172,7 @@ const routes: Routes = [
             component: RoutesComponent,
             children: [
               { path: '', component: RoutesOverviewComponent },
+              { path: 'route-details', component: RouteDetailsComponent },
             ],
           },
           { path: 'jobs', component: JobsComponent },
