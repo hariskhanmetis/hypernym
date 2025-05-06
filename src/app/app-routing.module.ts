@@ -54,6 +54,7 @@ import { RoutesOverviewComponent } from './routes/routes-overview/routes-overvie
 import { VehiclesOverviewComponent } from './vehicles/vehicles-overview/vehicles-overview.component';
 import { ManageGeoZonesComponent } from './vehicles/manage-geo-zones/manage-geo-zones.component';
 import { RouteDetailsComponent } from './routes/route-details/route-details.component';
+import { ManageLocationsComponent } from './routes/manage-locations/manage-locations.component';
 
 const routes: Routes = [
   // Authentication Routes
@@ -173,6 +174,7 @@ const routes: Routes = [
             children: [
               { path: '', component: RoutesOverviewComponent },
               { path: 'route-details', component: RouteDetailsComponent },
+              { path: 'manage-locations', component: ManageLocationsComponent },
             ],
           },
           { path: 'jobs', component: JobsComponent },
