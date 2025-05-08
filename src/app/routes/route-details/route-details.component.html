@@ -142,13 +142,19 @@
             </div>
         </div>
 
+        
         <div class="w-full bg-gray-50 rounded-xl overflow-hidden">
             <ng-container *ngIf="apiLoaded">
-                <google-map *ngIf="apiLoaded" [center]="center" [zoom]="zoom"
-                [width]="'100%'" [height]="'325px'" [options]="mapOptions">
-                </google-map>
-              </ng-container>
-        </div>
+              <google-map
+                *ngIf="apiLoaded"
+                [center]="center"
+                [zoom]="zoom"
+                [width]="'100%'"
+                [height]="'325px'"
+                [options]="mapOptions">
+              </google-map>
+            </ng-container>
+          </div>
 
         <!--<ng-container *ngIf="apiLoaded">
             <google-map *ngIf="apiLoaded" class="fixed top-0 left-0 w-full h-full" [center]="center" [zoom]="zoom"

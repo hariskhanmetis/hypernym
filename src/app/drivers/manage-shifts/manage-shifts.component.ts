@@ -7,24 +7,24 @@ import { Router } from '@angular/router';
   styleUrls: ['./manage-shifts.component.css']
 })
 export class ManageShiftsComponent implements AfterViewInit {
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
   @ViewChild('modal') modal!: ElementRef;
-  
-    isModalOpen = false;
-  
-    openModal() {
-      this.isModalOpen = true;
-    }
-  
-    closeModal() {
-      this.isModalOpen = false;
-    }
-  
-    ngAfterViewInit() {
-      this.isModalOpen = false;
-    }
 
-  navigateToDashboard () {
+  isModalOpen = false;
+
+  openModal() {
+    this.isModalOpen = true;
+  }
+
+  closeModal() {
+    this.isModalOpen = false;
+  }
+
+  ngAfterViewInit() {
+    this.isModalOpen = false;
+  }
+
+  navigateToDashboard() {
     this.router.navigate(['/dashboard/fleetpoint/dashboards/']);
   }
 
